@@ -38,12 +38,12 @@ export default function Home() {
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-teal-50/50 to-transparent pointer-events-none" />
-        <div className="max-w-6xl mx-auto px-4 pt-20 pb-16 text-center relative z-10">
+        <div className="max-w-6xl mx-auto px-4 pt-28 sm:pt-36 pb-20 text-center relative z-10">
           <div className="inline-flex items-center gap-2 bg-white border border-border-light rounded-full px-4 py-1.5 text-sm text-text-secondary mb-8 shadow-sm">
             <Sparkles size={14} className="text-teal" />
             Digitálny marketing bez bullshitu
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-text-main mb-6 leading-[1.1]">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-main mb-6 leading-[1.1]">
             Socka, čo ti naozaj<br /><span className="text-teal">pomôže rásť online</span>
           </h1>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-10 leading-relaxed">

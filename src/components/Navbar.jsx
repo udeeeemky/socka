@@ -31,7 +31,7 @@ export default function Navbar() {
 
       {/* Main nav */}
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-border-light">
-        <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2" onClick={() => setMobileOpen(false)}>
             <div className="w-8 h-8 bg-teal rounded-lg flex items-center justify-center text-white text-xs font-black font-[var(--font-display)]">CC</div>
             <span className="font-[var(--font-display)] font-extrabold text-lg text-text-main">socka</span>
