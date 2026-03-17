@@ -38,7 +38,7 @@ export default function Home() {
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-teal-50/50 to-transparent pointer-events-none" />
-        <div className="max-w-6xl mx-auto px-4 pt-20 pb-16 text-center relative z-10">
+        <div className="max-w-6xl mx-auto px-4 pt-28 sm:pt-36 pb-20 text-center relative z-10">
           <div className="inline-flex items-center gap-2 bg-white border border-border-light rounded-full px-4 py-1.5 text-sm text-text-secondary mb-8 shadow-sm">
             <Sparkles size={14} className="text-teal" />
             Digitálny marketing bez bullshitu
