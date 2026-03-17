@@ -43,7 +43,7 @@ export default function Home() {
             <Sparkles size={14} className="text-teal" />
             Digitálny marketing bez bullshitu
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-text-main mb-6 leading-[1.1]">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-main mb-6 leading-[1.1]">
             Socka, čo ti naozaj<br /><span className="text-teal">pomôže rásť online</span>
           </h1>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-10 leading-relaxed">
