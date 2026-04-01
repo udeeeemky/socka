@@ -17,12 +17,12 @@
           <div class="section-tag">Kontakt</div>
           <h2>Napíš mi.<br><span class="grad">Odpoviem do pár hodín.</span></h2>
           <p>Prvá konzultácia je vždy zadarmo. Porozprávame sa o tvojom biznise bez záväzkov.</p>
-          <a href="mailto:adam@socka.sk" class="btn-primary">Napísať e-mail →</a>
+          <a href="mailto:ahoj@socka.sk" class="btn-primary">Napísať e-mail →</a>
         </div>
         <div class="mc-right">
-          <a class="mc-item" href="mailto:adam@socka.sk">
+          <a class="mc-item" href="mailto:ahoj@socka.sk">
             <div class="mc-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
-            <div><strong>E-mail</strong><span>adam@socka.sk</span></div>
+            <div><strong>E-mail</strong><span>ahoj@socka.sk</span></div>
           </a>
           <a class="mc-item" href="tel:+421917744642">
             <div class="mc-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
@@ -71,7 +71,7 @@
         observer.unobserve(e.target);
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.08, rootMargin: '0px 0px 40px 0px' });
 
   // Stagger cards inside grids
   document.querySelectorAll(

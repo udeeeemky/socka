@@ -888,17 +888,17 @@
       <div class="review-card">
         <div class="review-stars">★★★★★</div>
         <p class="review-text" data-i18n="r1.t">"Grafiky i texty sú presne také, aké sme potrebovali — moderné, čisté a zákazníci si ich všímajú. Komunikácia bezproblémová, termíny dodržané."</p>
-        <div class="review-author"><div class="review-avatar">EE</div><div><div class="review-name">E.E.K.</div><div class="review-company" data-i18n="r1.c">Adaptiware</div></div></div>
+        <div class="review-author"><div class="review-avatar">EK</div><div><div class="review-name">E.E.K.</div><div class="review-company" data-i18n="r1.c">Adaptiware</div></div></div>
       </div>
       <div class="review-card">
         <div class="review-stars">★★★★★</div>
         <p class="review-text" data-i18n="r2.t">"Rýchla reakcia, jednoduchá komunikácia, výsledky, ktoré vidieť. Presne také, aké to má byť."</p>
-        <div class="review-author"><div class="review-avatar">MM</div><div><div class="review-name">M.M.Š.</div><div class="review-company" data-i18n="r2.c">BMW Košice</div></div></div>
+        <div class="review-author"><div class="review-avatar av-2">MŠ</div><div><div class="review-name">M.M.Š.</div><div class="review-company" data-i18n="r2.c">BMW Košice</div></div></div>
       </div>
       <div class="review-card">
         <div class="review-stars">★★★★★</div>
         <p class="review-text" data-i18n="r3.t">"Konečne niekto, kto rozumie tomu, čo chceme — a neopakuje len buzzwordy. Spolupráca je prirodzená a výsledky hovoria za seba."</p>
-        <div class="review-author"><div class="review-avatar">II</div><div><div class="review-name">I.I.T.</div><div class="review-company" data-i18n="r3.c">NoName</div></div></div>
+        <div class="review-author"><div class="review-avatar av-3">IT</div><div><div class="review-name">I.I.T.</div><div class="review-company" data-i18n="r3.c">NoName</div></div></div>
       </div>
     </div>
   </div>
@@ -988,7 +988,7 @@
             <input type="text" name="website" tabindex="-1" autocomplete="off">
           </div>
           <div class="form-row">
-            <div class="form-group"><label data-i18n="f.name">Meno</label><input name="name" type="text" data-i18n-ph="f.name.ph" placeholder="Ján Novák" required /></div>
+            <div class="form-group"><label data-i18n="f.name">Meno</label><input name="name" type="text" data-i18n-ph="f.name.ph" placeholder="Tvoje meno" required /></div>
             <div class="form-group"><label data-i18n="f.email">E-mail</label><input name="email" type="email" data-i18n-ph="f.email.ph" placeholder="jan@firma.sk" required /></div>
           </div>
           <div class="form-group"><label data-i18n="f.company">Firma / web</label><input name="company" type="text" data-i18n-ph="f.company.ph" placeholder="Moja firma s.r.o." /></div>
@@ -1009,9 +1009,12 @@
           <div class="form-group"><label data-i18n="f.msg">Správa</label><textarea name="message" data-i18n-ph="f.msg.ph" placeholder="Stručne opíšte váš biznis..." required></textarea></div>
           <label class="form-gdpr">
             <input type="checkbox" name="gdpr" required>
-            Súhlasím so spracovaním osobných údajov v súlade s <a href="/ochrana-osobnych-udajov/" target="_blank">Ochranou osobných údajov</a>. Údaje použijem výlučne na odpoveď na váš dopyt.
+            <span>Súhlasím so spracovaním osobných údajov podľa <a href="/ochrana-osobnych-udajov/" target="_blank">Zásad ochrany osobných údajov</a>.</span>
           </label>
-          <button type="submit" id="contactSubmit" class="btn-primary" style="width:100%;justify-content:center;margin-top:8px" data-i18n="f.submit">Odoslať dopyt →</button>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+            <button type="submit" id="contactSubmit" class="btn-primary" style="width:100%;justify-content:center">Odoslať dopyt →</button>
+            <a href="https://calendly.com/adstefanek/30min" target="_blank" rel="noopener" class="btn-calendly">📅 Alebo si vyber čas priamo →</a>
+          </div>
           <div id="contactMsg" style="display:none; margin-top:16px; padding:14px 18px; border-radius:10px; font-size:.9rem; font-weight:500;"></div>
         </form>
       </div>
@@ -1068,11 +1071,17 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p data-i18n="ft.copy">© 2025 socka. Všetky práva vyhradené.</p>
+      <p data-i18n="ft.copy">© 2026 socka. Všetky práva vyhradené.</p>
       <div class="footer-socials">
-        <a href="#" class="footer-social">IG</a>
-        <a href="#" class="footer-social">FB</a>
-        <a href="#" class="footer-social">LI</a>
+        <a href="https://instagram.com/socka.sk" class="footer-social" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://facebook.com/socka.sk" class="footer-social" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/socka" class="footer-social" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
       </div>
     </div>
   </div>
@@ -1128,10 +1137,10 @@ const T = {
     'ct.tag':'Kontakt','ct.title':'Napíš mi.','ct.title.g':'Zvyčajne odpoviem do pár hodín.','ct.desc':'Prvá konzultácia je vždy bezplatná. Porozprávame sa o tvojom biznise a navrhneme riešenie na mieru.',
     'ct.h3':'Som tu pre teba.','ct.p':'Rád sa stretnem osobne alebo zavoláme online. Pracujem s firmami po celom Slovensku, sídlim v Košiciach.',
     'ct.email':'E-mail','ct.phone':'Telefón','ct.addr':'Sídlo','ct.addr.v':'Košice, Slovensko','ct.hours':'Dostupnosť','ct.hours.v':'Zvyčajne odpoviem do pár hodín',
-    'f.name':'Meno','f.name.ph':'Ján Novák','f.email':'E-mail','f.email.ph':'jan@firma.sk','f.company':'Firma / web','f.company.ph':'Moja firma s.r.o.','f.interest':'Zaujíma ma','f.msg':'Správa','f.msg.ph':'Stručne opíš tvoj biznis...','f.submit':'Odoslať dopyt →',
+    'f.name':'Meno','f.name.ph':'Tvoje meno','f.email':'E-mail','f.email.ph':'jan@firma.sk','f.company':'Firma / web','f.company.ph':'Moja firma s.r.o.','f.interest':'Zaujíma ma','f.msg':'Správa','f.msg.ph':'Stručne opíš tvoj biznis...','f.submit':'Odoslať dopyt →',
     'f.o1':'Vybrať...','f.o2':'Tvorba webu','f.o3':'PPC kampane','f.o4':'Správa sociálnych sietí','f.o5':'SEO optimalizácia','f.o6':'Grafické práce','f.o7':'AI Search optimalizácia','f.o8':'Konzultácia','f.o9':'Nechám sa poradiť',
     'cta.tag':'Začni dnes','cta.h1':'Menej bullshitu,','cta.h1.g':'viac zákazníkov.','cta.desc':'Prvá konzultácia je zadarmo. Za 30 minút ti ukážem, kde máš nevyužitý potenciál a čo s tým spraviť.','cta.btn1':'Rezervovať bezplatnú konzultáciu →','cta.btn2':'📞 Zavolaj mi',
-    'ft.desc':'Digitálny marketing bez bullshitu. Weby, PPC a sociálne siete pre firmy po celom Slovensku.','ft.svc':'Služby','ft.s1':'Tvorba webov','ft.s2':'PPC kampane','ft.s3':'Sociálne siete','ft.s4':'SEO optimalizácia','ft.co':'O mne','ft.c1':'O mne','ft.c2':'Cenník','ft.c4':'Kontakt','ft.ct':'Kontakt','ft.copy':'© 2025 socka. Všetky práva vyhradené.'
+    'ft.desc':'Digitálny marketing bez bullshitu. Weby, PPC a sociálne siete pre firmy po celom Slovensku.','ft.svc':'Služby','ft.s1':'Tvorba webov','ft.s2':'PPC kampane','ft.s3':'Sociálne siete','ft.s4':'SEO optimalizácia','ft.co':'O mne','ft.c1':'O mne','ft.c2':'Cenník','ft.c4':'Kontakt','ft.ct':'Kontakt','ft.copy':'© 2026 socka. Všetky práva vyhradené.'
   },
   en: {
     'nav.services':'Services','nav.portfolio':'Results','nav.pricing':'Pricing','nav.contact':'Contact','nav.cta':'Write me',
@@ -1182,7 +1191,7 @@ const T = {
     'f.name':'Name','f.name.ph':'John Smith','f.email':'Email','f.email.ph':'john@company.com','f.company':'Company / website','f.company.ph':'My Company Ltd.','f.interest':'I\'m interested in','f.msg':'Message','f.msg.ph':'Briefly describe your business...','f.submit':'Send enquiry →',
     'f.o1':'Select...','f.o2':'Website development','f.o3':'PPC campaigns','f.o4':'Social media management','f.o5':'SEO optimisation','f.o6':'Graphic design','f.o7':'AI Search optimisation','f.o8':'Consultation','f.o9':'Not sure yet',
     'cta.tag':'Start today','cta.h1':'Less BS,','cta.h1.g':'more customers.','cta.desc':'First consultation is free. In 30 minutes I\'ll show you where you have untapped potential and what to do about it.','cta.btn1':'Book a free consultation →','cta.btn2':'📞 Call me',
-    'ft.desc':'Digital marketing without BS. Websites, PPC and social media for businesses across Slovakia.','ft.svc':'Services','ft.s1':'Website development','ft.s2':'PPC campaigns','ft.s3':'Social media','ft.s4':'SEO optimisation','ft.co':'About','ft.c1':'About me','ft.c2':'Pricing','ft.c4':'Contact','ft.ct':'Contact','ft.copy':'© 2025 socka. All rights reserved.'
+    'ft.desc':'Digital marketing without BS. Websites, PPC and social media for businesses across Slovakia.','ft.svc':'Services','ft.s1':'Website development','ft.s2':'PPC campaigns','ft.s3':'Social media','ft.s4':'SEO optimisation','ft.co':'About','ft.c1':'About me','ft.c2':'Pricing','ft.c4':'Contact','ft.ct':'Contact','ft.copy':'© 2026 socka. All rights reserved.'
   }
 };
 

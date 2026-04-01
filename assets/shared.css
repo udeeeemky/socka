@@ -286,8 +286,8 @@ nav { display: flex; align-items: center; height: 64px; }
 .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; }
 .hero-stats { display: flex; gap: 40px; flex-wrap: wrap; }
 .hero-stat-num { font-size: 2rem; font-weight: 900; letter-spacing: -.05em; }
-.hero-stat-label { font-size: .78rem; color: var(--text-muted); font-weight: 600; margin-top: 3px; }
-.hero-stat-sublabel { font-size: .7rem; color: var(--text-muted); opacity: .55; font-weight: 400; margin-top: 1px; }
+.hero-stat-label { font-size: .8rem; color: var(--text-muted); font-weight: 600; margin-top: 3px; }
+.hero-stat-sublabel { font-size: .75rem; color: var(--text-muted); opacity: .75; font-weight: 400; margin-top: 1px; }
 .hero-line { height: 1px; background: linear-gradient(90deg, transparent, var(--green), var(--cyan), transparent); margin: 40px 0 0; opacity: .3; }
 
 /* ══════ PAGE HERO (subpages) ══════ */
@@ -542,7 +542,9 @@ h2.section-title { font-size: clamp(2rem, 4.5vw, 3.2rem); max-width: 600px; marg
 .review-stars { color:#fbbf24; font-size:.9rem; letter-spacing:2px; margin-bottom:16px; }
 .review-text { font-size:.9rem; line-height:1.7; color:var(--text-muted); margin-bottom:20px; font-style:italic; }
 .review-author { display:flex; align-items:center; gap:12px; }
-.review-avatar { width:36px; height:36px; border-radius:50%; background:linear-gradient(135deg,var(--green),var(--cyan)); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:.85rem; color:#000; -webkit-text-fill-color:#000; flex-shrink:0; }
+.review-avatar { width:46px; height:46px; border-radius:50%; background:linear-gradient(135deg,var(--green),var(--cyan)); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:.9rem; color:#000; -webkit-text-fill-color:#000; flex-shrink:0; letter-spacing:.02em; }
+.review-avatar.av-2 { background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: #fff; -webkit-text-fill-color:#fff; }
+.review-avatar.av-3 { background: linear-gradient(135deg, #f59e0b, #ef4444); color: #fff; -webkit-text-fill-color:#fff; }
 .review-name { font-size:.875rem; font-weight:700; }
 .review-company { font-size:.78rem; color:var(--text-dim); }
 
@@ -1028,3 +1030,24 @@ a.mc-item:hover {
   cursor: pointer;
 }
 .form-gdpr a { color: var(--accent); text-decoration: underline; }
+
+/* ── Calendly ghost button ── */
+.btn-calendly {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 13px 24px;
+  border-radius: 12px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-size: .95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background .2s, color .2s;
+  text-align: center;
+}
+.btn-calendly:hover {
+  background: rgba(16,185,129,.08);
+}
