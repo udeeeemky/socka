@@ -1,3 +1,54 @@
+/* ─── ROUNA FONT (local test) ─── */
+@font-face {
+  font-family: 'Rouna';
+  src: url('/assets/fonts/rouna-regular-webfont.woff2') format('woff2'),
+       url('/assets/fonts/rouna-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Rouna';
+  src: url('/assets/fonts/rouna-medium-webfont.woff2') format('woff2'),
+       url('/assets/fonts/rouna-medium-webfont.woff') format('woff');
+  font-weight: 500 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Rouna';
+  src: url('/assets/fonts/rouna-bold-webfont.woff2') format('woff2'),
+       url('/assets/fonts/rouna-bold-webfont.woff') format('woff');
+  font-weight: 700 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ─── ROUNA on headings, numbers & nav ─── */
+h1, h2, h3, h4,
+.hero-title,
+.section-title,
+.page-hero h1,
+.hero-stat-num,
+.why-stat-num,
+.pricing-price,
+.result-num,
+.nav-links a,
+.logo,
+.nav-cta,
+.mobile-menu a,
+.mobile-cta,
+.btn-primary,
+.btn-secondary,
+.btn-outline,
+.btn-calendly,
+.service-link,
+.pricing-tab,
+.ann-banner,
+button {
+  font-family: 'Rouna', 'Inter', sans-serif;
+}
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 /* ─── DARK THEME ─── */
@@ -30,7 +81,7 @@
   --stripe-color-2: rgba(0,0,0,0.020);
   --stripe-color-3: rgba(16,185,129,0.05);
 }
-:root { --green: #10b981; --cyan: #06b6d4; --green-a: rgba(16,185,129,.12); }
+:root { --green: #10b981; --cyan: #06b6d4; --green-a: rgba(16,185,129,.12); --accent: #10b981; }
 
 html { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
 body { overflow-x: hidden; }
@@ -285,7 +336,7 @@ nav { display: flex; align-items: center; height: 64px; }
 .hero-sub { font-size: clamp(.95rem, 1.8vw, 1.08rem); max-width: 520px; margin: 22px 0 32px; }
 .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; }
 .hero-stats { display: flex; gap: 40px; flex-wrap: wrap; }
-.hero-stat-num { font-size: 2rem; font-weight: 900; letter-spacing: -.05em; }
+.hero-stat-num { font-size: 2.8rem; font-weight: 900; letter-spacing: -.04em; }
 .hero-stat-label { font-size: .8rem; color: var(--text-muted); font-weight: 600; margin-top: 3px; }
 .hero-stat-sublabel { font-size: .75rem; color: var(--text-muted); opacity: .75; font-weight: 400; margin-top: 1px; }
 .hero-line { height: 1px; background: linear-gradient(90deg, transparent, var(--green), var(--cyan), transparent); margin: 40px 0 0; opacity: .3; }
@@ -538,9 +589,9 @@ h2.section-title { font-size: clamp(2rem, 4.5vw, 3.2rem); max-width: 600px; marg
 
 /* ══════ REVIEWS ══════ */
 .reviews-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:56px; }
-.review-card { border:1px solid var(--border); border-radius:20px; padding:28px; background:var(--bg-card); box-shadow:var(--card-shadow); }
+.review-card { border:1px solid var(--border); border-radius:20px; padding:28px; background:var(--bg-card); box-shadow:var(--card-shadow); display:flex; flex-direction:column; }
 .review-stars { color:#fbbf24; font-size:.9rem; letter-spacing:2px; margin-bottom:16px; }
-.review-text { font-size:.9rem; line-height:1.7; color:var(--text-muted); margin-bottom:20px; font-style:italic; }
+.review-text { font-size:.9rem; line-height:1.7; color:var(--text-muted); margin-bottom:20px; font-style:italic; flex:1; }
 .review-author { display:flex; align-items:center; gap:12px; }
 .review-avatar { width:46px; height:46px; border-radius:50%; background:linear-gradient(135deg,var(--green),var(--cyan)); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:.9rem; color:#000; -webkit-text-fill-color:#000; flex-shrink:0; letter-spacing:.02em; }
 .review-avatar.av-2 { background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: #fff; -webkit-text-fill-color:#fff; }
@@ -627,6 +678,11 @@ footer { background:var(--bg-footer); border-top:1px solid var(--border); paddin
 .ann-banner a:hover { opacity: .75; }
 .ann-tag { background: linear-gradient(135deg,var(--green),var(--cyan)); color: #000; -webkit-text-fill-color: #000; font-size: .65rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; letter-spacing: .06em; flex-shrink: 0; }
 .ann-arrow { font-size: .85rem; }
+.ann-short { display: none; }
+@media (max-width: 640px) {
+  .ann-full { display: none; }
+  .ann-short { display: inline; }
+}
 
 /* ══════ BADGES ══════ */
 .badge-new { display: inline-block; padding: 2px 8px; background: linear-gradient(135deg,var(--green),var(--cyan)); color: #000; -webkit-text-fill-color: #000; font-size: .6rem; font-weight: 800; border-radius: 4px; letter-spacing: .06em; margin-left: 8px; vertical-align: middle; position: relative; top: -1px; }
@@ -1017,6 +1073,28 @@ a.mc-item:hover {
   color: #333;
 }
 [data-theme="light"] .cookie-decline:hover { border-color: rgba(0,0,0,0.45); color: #111; }
+
+/* ── COOKIE PREFERENCES button ── */
+.cookie-pref-btn {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  box-shadow: 0 2px 12px rgba(0,0,0,.15);
+  transition: border-color .2s, color .2s, transform .2s;
+}
+.cookie-pref-btn.visible { display: flex; }
+.cookie-pref-btn:hover { border-color: var(--accent); color: var(--accent); transform: scale(1.1); }
 
 /* ── GDPR checkbox in contact form ── */
 .form-gdpr {

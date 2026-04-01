@@ -236,35 +236,46 @@ document.querySelectorAll('.btn-primary').forEach(btn => {
 })();
 
 /* ── COOKIE CONSENT ── */
-(function cookieConsent() {
-  if (localStorage.getItem('socka-cookie-consent')) {
-    if (localStorage.getItem('socka-cookie-consent') === 'accepted') enableAnalytics();
-    return;
-  }
-
+function showCookieBanner(prefBtn) {
   const banner = document.createElement('div');
   banner.className = 'cookie-banner';
   banner.innerHTML = `
-    <p>Používame cookies na meranie návštevnosti (Google Analytics). Osobné údaje nezbierate bez tvojho súhlasu. <a href="/ochrana-osobnych-udajov/">Viac info</a></p>
+    <p>Používame cookies na meranie návštevnosti (Google Analytics). Osobné údaje nezdieľame bez tvojho súhlasu. <a href="/ochrana-osobnych-udajov/">Viac info</a></p>
     <div class="cookie-banner-btns">
       <button class="cookie-accept" id="cookieAccept">Prijať všetky</button>
       <button class="cookie-decline" id="cookieDecline">Len nevyhnutné</button>
     </div>`;
   document.body.appendChild(banner);
   requestAnimationFrame(() => banner.classList.add('visible'));
+  if (prefBtn) prefBtn.classList.remove('visible');
 
-  document.getElementById('cookieAccept').addEventListener('click', () => {
-    localStorage.setItem('socka-cookie-consent', 'accepted');
-    enableAnalytics();
+  function dismiss(choice) {
+    localStorage.setItem('socka-cookie-consent', choice);
+    if (choice === 'accepted') enableAnalytics();
     banner.classList.remove('visible');
-    setTimeout(() => banner.remove(), 400);
-  });
+    setTimeout(() => { banner.remove(); if (prefBtn) prefBtn.classList.add('visible'); }, 400);
+  }
 
-  document.getElementById('cookieDecline').addEventListener('click', () => {
-    localStorage.setItem('socka-cookie-consent', 'declined');
-    banner.classList.remove('visible');
-    setTimeout(() => banner.remove(), 400);
-  });
+  document.getElementById('cookieAccept').addEventListener('click', () => dismiss('accepted'));
+  document.getElementById('cookieDecline').addEventListener('click', () => dismiss('declined'));
+}
+
+(function cookieConsent() {
+  // persistent preferences button
+  const prefBtn = document.createElement('button');
+  prefBtn.className = 'cookie-pref-btn';
+  prefBtn.setAttribute('aria-label', 'Nastavenia cookies');
+  prefBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="8" cy="9" r="1.5" fill="currentColor" stroke="none"/><circle cx="15" cy="8" r="1" fill="currentColor" stroke="none"/><circle cx="15.5" cy="14" r="1.5" fill="currentColor" stroke="none"/><circle cx="9" cy="15" r="1" fill="currentColor" stroke="none"/></svg>';
+  document.body.appendChild(prefBtn);
+  prefBtn.addEventListener('click', () => showCookieBanner(prefBtn));
+
+  if (localStorage.getItem('socka-cookie-consent')) {
+    if (localStorage.getItem('socka-cookie-consent') === 'accepted') enableAnalytics();
+    prefBtn.classList.add('visible');
+    return;
+  }
+
+  showCookieBanner(prefBtn);
 })();
 
 function enableAnalytics() {
