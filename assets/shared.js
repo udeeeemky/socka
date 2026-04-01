@@ -24,9 +24,9 @@
             <div class="mc-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
             <div><strong>E-mail</strong><span>ahoj@socka.sk</span></div>
           </a>
-          <a class="mc-item" href="tel:+421917744642">
+          <a class="mc-item" href="tel:+421908289774">
             <div class="mc-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-            <div><strong>Telefón</strong><span>+421 917 744 642</span></div>
+            <div><strong>Telefón</strong><span>+421 908 289 774</span></div>
           </a>
           <div class="mc-item">
             <div class="mc-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
@@ -36,6 +36,33 @@
       </div>
     </div>`;
   footer.parentNode.insertBefore(section, footer);
+})();
+
+/* ── LANG SWITCHER injection (subpages only) ── */
+(function injectLangSwitcher() {
+  if (!document.querySelector('.page-hero')) return;
+  if (document.querySelector('.lang-switcher')) return;
+  const controls = document.querySelector('.nav-controls');
+  const themeBtn = document.getElementById('themeBtn');
+  if (!controls || !themeBtn) return;
+
+  const saved = localStorage.getItem('socka-lang') || 'sk';
+  const switcher = document.createElement('div');
+  switcher.className = 'lang-switcher';
+  switcher.innerHTML =
+    '<button class="lang-btn' + (saved === 'sk' ? ' active' : '') + '" data-lang="sk">SK</button>' +
+    '<button class="lang-btn' + (saved === 'en' ? ' active' : '') + '" data-lang="en">EN</button>';
+
+  switcher.addEventListener('click', e => {
+    const btn = e.target.closest('.lang-btn');
+    if (!btn) return;
+    const lang = btn.dataset.lang;
+    localStorage.setItem('socka-lang', lang);
+    switcher.querySelectorAll('.lang-btn').forEach(b =>
+      b.classList.toggle('active', b.dataset.lang === lang));
+  });
+
+  controls.insertBefore(switcher, themeBtn);
 })();
 
 /* ── BEAM injection into page-hero ── */

@@ -1011,6 +1011,11 @@ a.mc-item:hover {
   transition: border-color .2s, color .2s;
 }
 .cookie-decline:hover { border-color: var(--text-muted); color: var(--text); }
+[data-theme="light"] .cookie-decline {
+  border-color: rgba(0,0,0,0.25);
+  color: #333;
+}
+[data-theme="light"] .cookie-decline:hover { border-color: rgba(0,0,0,0.45); color: #111; }
 
 /* ── GDPR checkbox in contact form ── */
 .form-gdpr {
@@ -1032,7 +1037,9 @@ a.mc-item:hover {
 .form-gdpr a { color: var(--accent); text-decoration: underline; }
 
 /* ── Calendly ghost button ── */
-.btn-calendly {
+a.btn-calendly,
+a.btn-calendly:visited,
+a.btn-calendly:link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1041,13 +1048,14 @@ a.mc-item:hover {
   border-radius: 12px;
   border: 1px solid var(--accent);
   background: transparent;
-  color: var(--accent);
+  color: var(--accent) !important;
   font-size: .95rem;
   font-weight: 600;
-  text-decoration: none;
+  text-decoration: none !important;
   transition: background .2s, color .2s;
   text-align: center;
+  box-sizing: border-box;
 }
-.btn-calendly:hover {
+a.btn-calendly:hover {
   background: rgba(16,185,129,.08);
 }
