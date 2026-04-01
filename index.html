@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="sk" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Socka | Digitálny marketing Košice — Weby, PPC, Sociálne siete</title>
+  <meta name="description" content="Udemky (socka.sk) je freelance digitálny marketér z Košíc s 20+ rokmi skúseností. Poskytuje tvorbu webov (WordPress), PPC kampane (Google Ads, Meta Ads), správu sociálnych sietí, SEO a AI Search optimalizáciu (AEO/GEO) pre malé a stredné firmy na Slovensku. Kontakt: ahoj@socka.sk, +421 917 744 642." />
+  <meta name="author" content="Udemky — socka.sk" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#10b981" />
+  <link rel="canonical" href="https://socka.sk/" />
+  <link rel="alternate" hreflang="sk" href="https://socka.sk/" />
+  <link rel="alternate" hreflang="en" href="https://socka.sk/?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://socka.sk/" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://socka.sk/" />
+  <meta property="og:title" content="Socka | Digitálny marketing Košice — Weby, PPC, Sociálne siete" />
+  <meta property="og:description" content="Digitálny marketing bez bullshitu. Weby, PPC kampane a správa sociálnych sietí pre lokálne firmy. Priamy kontakt, reálne výsledky." />
+  <meta property="og:image" content="https://socka.sk/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:image" content="https://socka.sk/assets/og-image.png" />
+  <meta property="og:locale" content="sk_SK" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="socka." />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Socka | Digitálny marketing bez bullshitu" />
+  <meta name="twitter:description" content="Weby, PPC kampane a správa sociálnych sietí pre lokálne firmy. Bez bullshitu, s reálnymi výsledkami." />
+  <meta name="twitter:image" content="https://socka.sk/og-image.jpg" />
+
+  <!-- Prevent FOUC: set theme before paint -->
+  <script>
+    (function(){
+      var t=localStorage.getItem('socka-theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');
+      document.documentElement.setAttribute('data-theme',t);
+    })();
+  </script>
+
+  <!-- Google Analytics 4 – načíta sa len po súhlase -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    // Predvolene zakázané (GDPR Consent Mode v2)
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      wait_for_update: 500
+    });
+    gtag('js', new Date());
+    gtag('config', 'G-VCLGEG90EV'); // ← sem daj svoje GA4 Measurement ID
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCLGEG90EV"></script>
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/assets/shared.css" />
+
+  <!-- JSON-LD: LocalBusiness + Person + WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://socka.sk/#business",
+        "name": "Socka — digitálny marketing",
+        "alternateName": "Udemky",
+        "url": "https://socka.sk",
+        "logo": "https://socka.sk/logo.png",
+        "image": "https://socka.sk/og-image.jpg",
+        "description": "Digitálny marketing bez bullshitu. Weby, PPC kampane a správa sociálnych sietí pre lokálne firmy na Slovensku.",
+        "telephone": "+421917744642",
+        "email": "ahoj@socka.sk",
+        "address": {"@type": "PostalAddress", "addressLocality": "Košice", "addressCountry": "SK"},
+        "areaServed": {"@type": "Country", "name": "Slovakia"},
+        "priceRange": "€€",
+        "knowsAbout": ["digitálny marketing","PPC reklama","Google Ads","Meta Ads","tvorba webov","WordPress","SEO optimalizácia","správa sociálnych sietí","AEO optimalizácia","GEO optimalizácia"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Digitálne marketingové služby",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tvorba webov", "description": "Weby na mieru pre lokálne firmy. WordPress, UX, rýchlosť, Core Web Vitals."}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "PPC správa", "description": "Google Ads a Meta Ads kampane. Hypotézy, A/B testy, týždenný reporting."}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Správa sociálnych sietí", "description": "Stratégia, tvorba obsahu, publikovanie a komunitný manažment."}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO optimalizácia", "description": "Technické SEO, keyword research, linkbuilding a obsahová stratégia."}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Search optimalizácia", "description": "AEO a GEO optimalizácia pre ChatGPT, Perplexity, Gemini a ďalšie AI vyhľadávače."}}
+          ]
+        },
+        "sameAs": ["https://www.instagram.com/socka.sk","https://www.facebook.com/socka.sk","https://www.linkedin.com/company/socka-sk"]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://socka.sk/#person",
+        "name": "Udemky",
+        "url": "https://socka.sk",
+        "jobTitle": "Digitálny marketér",
+        "worksFor": {"@id": "https://socka.sk/#business"},
+        "knowsAbout": ["digitálny marketing","PPC","SEO","sociálne siete","tvorba webov","AI Search optimalizácia"],
+        "description": "Freelance digitálny marketér s 20+ rokmi skúseností v reklame a 10+ rokmi v digitále. Špecialista na weby, PPC kampane a správu sociálnych sietí pre lokálne firmy.",
+        "address": {"@type": "PostalAddress", "addressLocality": "Košice", "addressCountry": "SK"}
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://socka.sk/#website",
+        "url": "https://socka.sk",
+        "name": "socka.",
+        "description": "Digitálny marketing bez bullshitu",
+        "publisher": {"@id": "https://socka.sk/#person"},
+        "inLanguage": ["sk", "en"]
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Čo je PPC a oplatí sa mi to?", "acceptedAnswer": {"@type": "Answer", "text": "PPC (Pay-Per-Click) je platená reklama, kde platíš len keď niekto klikne. Google Ads a Meta Ads ti umožňujú osloviť ľudí presne vtedy, keď hľadajú tvoj produkt alebo službu. Pre lokálne firmy je to zvyčajne najrýchlejšia cesta k novým dopytom."}},
+      {"@type": "Question", "name": "Prečo si vybrať teba namiesto agentúry?", "acceptedAnswer": {"@type": "Answer", "text": "Komunikuješ priamo so mnou — žiadni account manageri, žiadne predávanie klientov medzi ľudí. Viem ti povedať čo fungovalo, čo nie a prečo, bez korporátnej omáčky. Navyše ceny sú nastavené pre reálny trh."}},
+      {"@type": "Question", "name": "Koľko stojí digitálny marketing?", "acceptedAnswer": {"@type": "Answer", "text": "Záleží od toho, čo potrebuješ. Konzultácia stojí 79 €. Správa sociálnych sietí od 390 €/mes, PPC kampane od 150 € nastavenie + % z budgetu, web od 790 €."}},
+      {"@type": "Question", "name": "Ako dlho trvá, kým uvidím výsledky?", "acceptedAnswer": {"@type": "Answer", "text": "PPC kampane môžu priniesť prvé dopyty do 1–2 týždňov. SEO a sociálne siete potrebujú 3–6 mesiacov na merateľný posun. Vždy nastavíme realistické očakávania vopred."}},
+      {"@type": "Question", "name": "Čo je AI Search optimalizácia a prečo ju potrebujem?", "acceptedAnswer": {"@type": "Answer", "text": "ChatGPT, Perplexity a Gemini čoraz viac nahrádzajú klasické vyhľadávanie. AEO (Answer Engine Optimization) a GEO (Generative Engine Optimization) zabezpečia, že keď niekto spýta AI na tvoju oblasť alebo lokalitu, budeš v odpovedi figurovať ty."}},
+      {"@type": "Question", "name": "Pracuješ len s veľkými firmami?", "acceptedAnswer": {"@type": "Answer", "text": "Nie. Väčšina mojich klientov sú malé a stredné firmy — remeselníci, reštaurácie, kliniky, servisy, salóny. Práve pre ne to robím najradšej, lebo tam vidieť reálny dopad."}},
+      {"@type": "Question", "name": "Ako začneme spoluprácu?", "acceptedAnswer": {"@type": "Answer", "text": "Napíš mi alebo zavolaj. Dohodneme si krátky hovor (bezplatne), kde zistíme, či si sadneme. Ak áno, pošlem ponuku do 48 hodín."}}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: Speakable + WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".hero-sub", ".section-desc", "[data-i18n='web.desc']", "[data-i18n='ppc.desc']", "[data-i18n='ai.desc']"]
+    },
+    "url": "https://socka.sk/"
+  }
+  </script>
+</head>
+
+<body>
+
+<!-- ═══════════════════════════ ANNOUNCEMENT BANNER ═══════════════════════════ -->
+<div class="ann-banner">
+  <a href="/ai-search-optimalizacia/">
+    <span class="ann-tag">✦ NOVINKA</span>
+    <span>AI Search optimalizácia – buď citovaný v ChatGPT, Perplexity, Claude a ďalších</span>
+    <span class="ann-arrow">→</span>
+  </a>
+</div>
+
+<!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
+<header id="header">
+  <div class="container">
+    <nav>
+      <a href="/" class="logo">socka.</a>
+
+      <ul class="nav-links">
+        <li class="nav-dropdown">
+          <a href="#sluzby">Služby <span class="dropdown-chevron">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="/tvorba-webov/"><span class="dropdown-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg></span> Tvorba webov</a>
+            <a href="/ppc-sprava/"><span class="dropdown-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/></svg></span> PPC správa</a>
+            <a href="/social-sprava/"><span class="dropdown-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-2.5 4-6 4c-3.5 0-6 4-6 4s-2.5 4-6 4"/><circle cx="18" cy="4" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="6" cy="20" r="2"/></svg></span> Sociálne siete</a>
+            <a href="/seo-optimalizacia/"><span class="dropdown-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></span> SEO optimalizácia</a>
+            <a href="/graficke-prace/"><span class="dropdown-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg></span> Grafické práce</a>
+            <a href="/ai-search-optimalizacia/"><span class="dropdown-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 6v6l4 2"/></svg></span> AI Search <span class="dropdown-new">NOVINKA</span></a>
+          </div>
+        </li>
+        <li><a href="/#vysledky" data-i18n="nav.results">Výsledky</a></li>
+        <li><a href="/#preco" data-i18n="nav.about">O mne</a></li>
+        <li><a href="/#ceny" data-i18n="nav.pricing">Ceny</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="/#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="sk" onclick="setLang('sk')">SK</button>
+          <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="Toggle theme">
+          <!-- icon set by JS -->
+        </button>
+        <a href="#kontakt" class="nav-cta">
+          <span data-i18n="nav.cta">Napíš mi</span>
+          <span class="nav-cta-arrow">→</span>
+        </a>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-services-toggle" onclick="toggleMobileServices()" aria-expanded="false" id="mobileServicesBtn">
+    <span data-i18n="nav.services">Služby</span>
+    <span class="dropdown-chevron">▾</span>
+  </button>
+  <div class="mobile-sub" id="mobileSub">
+    <a href="/tvorba-webov/" onclick="closeMobile()">Tvorba webov</a>
+    <a href="/ppc-sprava/" onclick="closeMobile()">PPC správa</a>
+    <a href="/social-sprava/" onclick="closeMobile()">Sociálne siete</a>
+    <a href="/seo-optimalizacia/" onclick="closeMobile()">SEO optimalizácia</a>
+    <a href="/graficke-prace/" onclick="closeMobile()">Grafické práce</a>
+    <a href="/ai-search-optimalizacia/" onclick="closeMobile()">AI Search <span style="font-size:0.65em;background:var(--accent);color:#000;padding:1px 5px;border-radius:4px;font-weight:700;letter-spacing:.04em;vertical-align:middle">NOVINKA</span></a>
+  </div>
+  <a href="/#vysledky" onclick="closeMobile()" data-i18n="nav.results">Výsledky</a>
+  <a href="/#preco" onclick="closeMobile()" data-i18n="nav.about">O mne</a>
+  <a href="/#ceny" onclick="closeMobile()" data-i18n="nav.pricing">Ceny</a>
+  <a href="/#faq" onclick="closeMobile()">FAQ</a>
+  <a href="/#kontakt" onclick="closeMobile()" data-i18n="nav.contact">Kontakt</a>
+  <div class="mobile-footer">
+    <a href="/#kontakt" class="mobile-cta" onclick="closeMobile()"><span data-i18n="nav.cta">Napíš mi →</span></a>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+<section class="hero grid-bg">
+  <div class="hero-spotlight" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        <span data-i18n="hero.badge">Digitálny marketing bez bullshitu</span>
+      </div>
+
+      <h1>
+        <span data-i18n="hero.h1a">Socka, čo ti naozaj</span><br />
+        <span class="underline-wrap grad" data-i18n="hero.h1c">pomôže rásť online.
+          <svg viewBox="0 0 340 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 9C70 3 160 1 220 4C265 6 305 9 338 12" stroke="url(#ug)" stroke-width="3" stroke-linecap="round"/>
+            <defs><linearGradient id="ug" x1="0" y1="0" x2="340" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#10b981"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+          </svg>
+        </span>
+      </h1>
+
+      <p class="hero-sub" data-i18n="hero.sub">
+        Toto nie je agentúra plná powerpointov a corporate bullshitov. Toto je socka, čo ti spravuje marketing tak, ako by to spravil kamarát — bez zbytočných kecov a s reálnymi výsledkami.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#kontakt" class="btn-primary" data-i18n="hero.btn1">Napíš mi →</a>
+        <a href="#vysledky" class="btn-secondary" data-i18n="hero.btn2">Čo ti viem dať</a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num grad">+312%</div>
+          <div class="hero-stat-label" data-i18n="stat.1">organický traffic</div>
+          <div class="hero-stat-sublabel" data-i18n="stat.1s">/ 6 mes.</div>
+        </div>
+        <div>
+          <div class="hero-stat-num grad">−28%</div>
+          <div class="hero-stat-label" data-i18n="stat.2">CAC (akvizičné náklady)</div>
+          <div class="hero-stat-sublabel" data-i18n="stat.2s">/ 90 dní</div>
+        </div>
+        <div>
+          <div class="hero-stat-num grad">5,2×</div>
+          <div class="hero-stat-label" data-i18n="stat.3">ROAS</div>
+          <div class="hero-stat-sublabel" data-i18n="stat.3s">/ 120 dní</div>
+        </div>
+        <div>
+          <div class="hero-stat-num grad">500+</div>
+          <div class="hero-stat-label" data-i18n="stat.4">projektov</div>
+          <div class="hero-stat-sublabel" data-i18n="stat.4s">&nbsp;</div>
+        </div>
+      </div>
+      <div class="hero-line"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ TECH STRIP ═══════════════════════════ -->
+<div class="tech-strip">
+  <div class="container" style="overflow:hidden">
+    <div class="tech-track">
+      <span class="tech-item"><img src="https://cdn.simpleicons.org/wordpress" alt="" class="tech-icon">WordPress</span>
+      <span class="tech-item"><img src="https://cdn.simpleicons.org/elementor" alt="" class="tech-icon">Elementor</span>
+      <span class="tech-item"><img src="https://cdn.simpleicons.org/googleads" alt="" class="tech-icon">Google Ads</span>
+      <span class="tech-item"><img src="https://cdn.simpleicons.org/meta" alt="" class="tech-icon">Meta Ads</span>
+      <span class="tech-item"><img src="https://cdn.simpleicons.org/googleanalytics" alt="" class="tech-icon">GA4</span>
+      <span class="tech-item"><img src="https://cdn.simpleicons.org/wprocket" alt="" class="tech-icon">WP Rocket</span>
+      <span class="tech-item"><img src="https://cdn.simpleicons.org/figma" alt="" class="tech-icon">Figma</span>
+      <span class="tech-item"><img src="https://cdn.simpleicons.org/deepl" alt="" class="tech-icon">DeepL</span>
+      <span class="tech-item">OpenAI</span>
+      <span class="tech-item">Claude</span>
+      <span class="tech-item">VS Code</span>
+      <span class="tech-item"><img src="https://cdn.simpleicons.org/laravel" alt="" class="tech-icon">Laravel</span>
+      <span class="tech-item">Websupport</span>
+      <!-- duplicate for seamless loop -->
+      <span class="tech-item"><img src="https://cdn.simpleicons.org/wordpress" alt="" class="tech-icon">WordPress</span>
+      <span class="tech-item"><img src="https://cdn.simpleicons.org/elementor" alt="" class="tech-icon">Elementor</span>
+      <span class="tech-item"><img src="https://cdn.simpleicons.org/googleads" alt="" class="tech-icon">Google Ads</span>
+      <span class="tech-item"><img src="https://cdn.simpleicons.org/meta" alt="" class="tech-icon">Meta Ads</span>
+      <span class="tech-item"><img src="https://cdn.simpleicons.org/googleanalytics" alt="" class="tech-icon">GA4</span>
+      <span class="tech-item"><img src="https://cdn.simpleicons.org/wprocket" alt="" class="tech-icon">WP Rocket</span>
+      <span class="tech-item"><img src="https://cdn.simpleicons.org/figma" alt="" class="tech-icon">Figma</span>
+      <span class="tech-item"><img src="https://cdn.simpleicons.org/deepl" alt="" class="tech-icon">DeepL</span>
+      <span class="tech-item">OpenAI</span>
+      <span class="tech-item">Claude</span>
+      <span class="tech-item">VS Code</span>
+      <span class="tech-item"><img src="https://cdn.simpleicons.org/laravel" alt="" class="tech-icon">Laravel</span>
+      <span class="tech-item">Websupport</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ SERVICES ═══════════════════════════ -->
+<section id="sluzby">
+  <div class="container">
+    <div class="section-tag" data-i18n="s.tag">Čo robím</div>
+    <h2 class="section-title"><span data-i18n="s.title">Všetko pre rast</span> <span class="grad" data-i18n="s.title.g">online.</span></h2>
+    <p class="section-desc" data-i18n="s.desc">Weby, kampane a sociálne siete. Jedno miesto, jeden kontakt, reálne výsledky.</p>
+
+    <div class="services-grid">
+      <article class="service-card" data-service="tvorba-webov" data-service-description="Tvorba webov na mieru pre lokálne firmy. WordPress, responzívny dizajn, PageSpeed 90+, SEO-ready štruktúra, Core Web Vitals, CMS správa obsahu bez programovania.">
+        <div class="service-icon si-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <h3 data-i18n="web.title">Tvorba webov</h3>
+        <p data-i18n="web.desc">Weby na mieru, ktoré menia návštevy na dopyty. UX, rýchlosť, konverzie.</p>
+        <ul class="service-features">
+          <li data-i18n="web.f1">Responzívny dizajn</li>
+          <li data-i18n="web.f2">PageSpeed 90+</li>
+          <li data-i18n="web.f3">SEO-ready štruktúra</li>
+          <li data-i18n="web.f4">CMS správa obsahu</li>
+          <li data-i18n="web.f5">Core Web Vitals</li>
+        </ul>
+        <a href="/tvorba-webov/" class="service-link"><span data-i18n="web.link">Viac info</span> →</a>
+      </article>
+
+      <article class="service-card" data-service="ppc-sprava" data-service-description="PPC správa zahŕňa nastavenie a optimalizáciu Google Ads Search a Display kampaní, Facebook a Instagram reklamy, remarketing, A/B testovanie kreatív a týždenný reporting s KPI.">
+        <div class="service-icon si-cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+        <h3 data-i18n="ppc.title">PPC správa</h3>
+        <p data-i18n="ppc.desc">Google Ads, Meta Ads a porovnávače. Hypotézy, A/B testy, týždenný reporting.</p>
+        <ul class="service-features">
+          <li data-i18n="ppc.f1">Google Search & Display</li>
+          <li data-i18n="ppc.f2">Facebook & Instagram</li>
+          <li data-i18n="ppc.f3">Remarketing</li>
+          <li data-i18n="ppc.f4">Týždenné reporty</li>
+          <li data-i18n="ppc.f5">Optimalizácia KPI</li>
+        </ul>
+        <a href="/ppc-sprava/" class="service-link"><span data-i18n="ppc.link">Viac info</span> →</a>
+      </article>
+
+      <article class="service-card" data-service="socialne-siete" data-service-description="Správa sociálnych sietí zahŕňa mesačnú obsahovú stratégiu, tvorbu vizuálov a copy, pravidelné publikovanie na Instagram, Facebook, LinkedIn, správu DM a komentárov a mesačný reporting.">
+        <div class="service-icon si-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2H3v16h5v4l4-4h5l4-4V2z"/><path d="M11 7h6M11 12h4"/></svg></div>
+        <h3 data-i18n="soc.title">Sociálne siete</h3>
+        <p data-i18n="soc.desc">Stratégia, tvorba obsahu, reklamy a komunitný manažment. KPI, nie len dosah.</p>
+        <ul class="service-features">
+          <li data-i18n="soc.f1">Mesačná obsahová stratégia</li>
+          <li data-i18n="soc.f2">Tvorba vizuálov & copy</li>
+          <li data-i18n="soc.f3">Pravidelné publikovanie</li>
+          <li data-i18n="soc.f4">Správa DM/komentárov</li>
+          <li data-i18n="soc.f5">Mesačný prehľad</li>
+        </ul>
+        <a href="/social-sprava/" class="service-link"><span data-i18n="soc.link">Viac info</span> →</a>
+      </article>
+
+      <article class="service-card" data-service="seo-optimalizacia" data-service-description="SEO optimalizácia zahŕňa technický audit, keyword research, on-page SEO, linkbuilding, obsahovú stratégiu a mesačný reporting viditeľnosti vo vyhľadávačoch.">
+        <div class="service-icon si-cyan" style="background:rgba(251,191,36,.1);border-color:rgba(251,191,36,.2);color:#f59e0b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 16 4-4 4 4 4-4"/></svg></div>
+        <h3 data-i18n="seo.title">SEO optimalizácia</h3>
+        <p data-i18n="seo.desc">Klasická optimalizácia pre vyhľadávače. Technické SEO, obsah a linkbuilding.</p>
+        <ul class="service-features">
+          <li data-i18n="seo.f1">Technický audit</li>
+          <li data-i18n="seo.f2">Keyword research</li>
+          <li data-i18n="seo.f3">Linkbuilding</li>
+          <li data-i18n="seo.f4">On-page SEO</li>
+          <li data-i18n="seo.f5">Mesačný reporting</li>
+        </ul>
+        <a href="/seo-optimalizacia/" class="service-link"><span data-i18n="seo.link">Viac info</span> →</a>
+      </article>
+
+      <article class="service-card" data-service="graficke-prace" data-service-description="Grafické práce zahŕňajú logo a brand manuál, social media grafiku, bannery a reklamy, šablóny na opakované použitie pre Instagram, Facebook a Google Display.">
+        <div class="service-icon si-purple" style="background:rgba(249,115,22,.1);border-color:rgba(249,115,22,.2);color:#f97316"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg></div>
+        <h3 data-i18n="gfx.title">Grafické práce</h3>
+        <p data-i18n="gfx.desc">Vizuálna identita, bannery, social media grafika a všetko čo potrebuješ.</p>
+        <ul class="service-features">
+          <li data-i18n="gfx.f1">Logo a brand manuál</li>
+          <li data-i18n="gfx.f2">Social media grafika</li>
+          <li data-i18n="gfx.f3">Bannery a reklamy</li>
+          <li data-i18n="gfx.f4">Šablóny na opakované použitie</li>
+        </ul>
+        <a href="/graficke-prace/" class="service-link"><span data-i18n="gfx.link">Viac info</span> →</a>
+      </article>
+
+      <article class="service-card" style="border-color:rgba(16,185,129,.25)" data-service="ai-search-optimalizacia" data-service-description="AI Search optimalizácia (AEO — Answer Engine Optimization, GEO — Generative Engine Optimization) zabezpečí viditeľnosť v ChatGPT, Perplexity, Gemini a Google AI Overviews. Zahŕňa entity optimization, štruktúrované dáta a budovanie autority v AI zdrojoch.">
+        <div class="service-icon si-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="2" y="8" width="20" height="12" rx="2"/><path d="M6 12h.01M12 12h.01M18 12h.01M6 16h.01M12 16h.01M18 16h.01"/></svg></div>
+        <h3 data-i18n="ai.title">AI Search optimalizácia <span class="badge-new">NOVINKA</span></h3>
+        <p data-i18n="ai.desc">AEO a GEO optimalizácia pre AI vyhľadávače – ChatGPT, Perplexity, Gemini a ďalšie.</p>
+        <ul class="service-features">
+          <li data-i18n="ai.f1">ChatGPT optimalizácia</li>
+          <li data-i18n="ai.f2">Perplexity & Gemini viditeľnosť</li>
+          <li data-i18n="ai.f3">AEO obsah</li>
+          <li data-i18n="ai.f4">GEO stratégia</li>
+          <li data-i18n="ai.f5">AI monitoring</li>
+        </ul>
+        <a href="/ai-search-optimalizacia/" class="service-link"><span data-i18n="ai.link">Viac info</span> →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ STEPS ═══════════════════════════ -->
+<section style="padding-top:0">
+  <div class="container">
+    <div class="section-tag" data-i18n="how.tag">Ako to funguje</div>
+    <h2 class="section-title"><span data-i18n="how.title">Od prvého hovoru po</span> <span class="grad" data-i18n="how.title.g">výsledky.</span></h2>
+    <p class="section-desc" data-i18n="how.desc">Žiadne zdĺhavé onboardingy ani nekonečné schvaľovacie kolá. Rýchlo, priamo, bez omáčok.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num" data-i18n="step1.n">01 — HOVOR</div>
+        <h3 data-i18n="step1.t">Bezplatná konzultácia</h3>
+        <p data-i18n="step1.d">Zavoláme si alebo sa stretneme. Povieš čo riešiš, ja poviem čo spraviť. Bez záväzkov, bez omáčok.</p>
+      </div>
+      <div class="step">
+        <div class="step-num" data-i18n="step2.n">02 — STRATÉGIA</div>
+        <h3 data-i18n="step2.t">Návrh riešenia</h3>
+        <p data-i18n="step2.d">Na základe hovoru pripravím konkrétny plán a cenovú ponuku. Vieš presne, čo dostaneš, do kedy a za koľko.</p>
+      </div>
+      <div class="step">
+        <div class="step-num" data-i18n="step3.n">03 — VÝSLEDKY</div>
+        <h3 data-i18n="step3.t">Realizácia & výsledky</h3>
+        <p data-i18n="step3.d">Pustíme sa do práce. Pravidelne ťa informujem, reportujem výsledky a priebežne optimalizujem.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ VÝSLEDKY ═══════════════════════════ -->
+<section id="vysledky">
+  <div class="container">
+    <div class="section-tag" data-i18n="res.tag">Výsledky</div>
+    <h2 class="section-title"><span data-i18n="res.title">Reálne čísla.</span> <span class="grad" data-i18n="res.title.g">Bez omáčok.</span></h2>
+    <p class="section-desc" data-i18n="res.desc">Výsledky z reálnych kampaní a projektov.</p>
+    <div class="results-grid">
+      <div class="result-card">
+        <div class="result-num grad">+312%</div>
+        <div class="result-metric" data-i18n="res.m1">organický traffic</div>
+        <div class="result-sub" data-i18n="res.s1">e-shop, 6 mesiacov SEO+content</div>
+      </div>
+      <div class="result-card">
+        <div class="result-num grad">−28%</div>
+        <div class="result-metric" data-i18n="res.m2">náklady na akvizíciu</div>
+        <div class="result-sub" data-i18n="res.s2">lokálna služba, 90 dní PPC</div>
+      </div>
+      <div class="result-card">
+        <div class="result-num grad">5,2×</div>
+        <div class="result-metric" data-i18n="res.m3">ROAS</div>
+        <div class="result-sub" data-i18n="res.s3">e-commerce, 120 dní Meta Ads</div>
+      </div>
+      <div class="result-card">
+        <div class="result-num grad">95%</div>
+        <div class="result-metric" data-i18n="res.m4">obsadenosť</div>
+        <div class="result-sub" data-i18n="res.s4">z 60%, web + Google Ads, 4 mesiace</div>
+      </div>
+    </div>
+    <p class="results-disclaimer" data-i18n="res.disc"><em>Konkrétne referencie a case studies na vyžiadanie.</em></p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ PREČO PRÁVE JA ═══════════════════════════ -->
+<section id="preco">
+  <div class="container">
+    <div class="section-tag" data-i18n="why.tag">Prečo práve ja</div>
+    <h2 class="section-title"><span data-i18n="why.title">Niekto, komu</span> <span class="grad" data-i18n="why.title.g">napíšeš večer.</span></h2>
+
+    <div class="why-grid">
+      <div>
+        <p class="why-intro" data-i18n="why.intro">Volajú ma Udemky — nie je to agentúrny názov, je to moja prezývka od kamarátov. Robím digitálny marketing už roky. Nechcel som byť ďalší „digitálny expert". Chcel som robiť veci jednoducho, poctivo a tak, aby to aj fungovalo.</p>
+        <ul class="usp-list">
+          <li><span class="usp-check">✓</span><span data-i18n="why.u1">Nepoužívam korporátny jazyk</span></li>
+          <li><span class="usp-check">✓</span><span data-i18n="why.u2">Nepotrebujem 7 schvaľovačiek</span></li>
+          <li><span class="usp-check">✓</span><span data-i18n="why.u3">Komunikuješ priamo so mnou — žiadni account manageri</span></li>
+          <li><span class="usp-check">✓</span><span data-i18n="why.u4">Robím rýchlo a hovorím na rovinu</span></li>
+        </ul>
+        <a href="#kontakt" class="btn-primary" data-i18n="why.cta">Spoznajme sa →</a>
+      </div>
+      <div class="why-stats">
+        <div class="why-stat">
+          <div class="why-stat-num grad">20+</div>
+          <div class="why-stat-label" data-i18n="why.s1">rokov v reklame</div>
+        </div>
+        <div class="why-stat">
+          <div class="why-stat-num grad">10+</div>
+          <div class="why-stat-label" data-i18n="why.s2">rokov v digitále</div>
+        </div>
+        <div class="why-stat">
+          <div class="why-stat-num grad">500+</div>
+          <div class="why-stat-label" data-i18n="why.s3">projektov</div>
+        </div>
+        <div class="why-stat">
+          <div class="why-stat-num grad">0</div>
+          <div class="why-stat-label" data-i18n="why.s4">bullshitov</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ PRICING ═══════════════════════════ -->
+<section id="ceny" aria-label="Cenník digitálnych marketingových služieb">
+  <div class="container">
+    <div class="section-tag">Cenník</div>
+    <h2 class="section-title">Cenník</h2>
+    <p class="section-desc">Keď nevieš čo vybrať: daj si konzultáciu. Ušetríš čas aj peniaze.</p>
+
+    <!-- Tabs -->
+    <div class="pricing-tabs" role="tablist" aria-label="Kategórie služieb">
+      <button class="pricing-tab active" role="tab" aria-selected="true" aria-controls="cat-weby" onclick="showCat('weby')">Weby</button>
+      <button class="pricing-tab" role="tab" aria-selected="false" aria-controls="cat-ppc" onclick="showCat('ppc')">PPC</button>
+      <button class="pricing-tab" role="tab" aria-selected="false" aria-controls="cat-social" onclick="showCat('social')">Sociálne siete</button>
+      <button class="pricing-tab" role="tab" aria-selected="false" aria-controls="cat-seo" onclick="showCat('seo')">SEO</button>
+      <button class="pricing-tab" role="tab" aria-selected="false" aria-controls="cat-konzultacie" onclick="showCat('konzultacie')">Konzultácie</button>
+      <button class="pricing-tab" role="tab" aria-selected="false" aria-controls="cat-grafika" onclick="showCat('grafika')">Grafika</button>
+      <button class="pricing-tab" role="tab" aria-selected="false" aria-controls="cat-texty" onclick="showCat('texty')">Texty</button>
+    </div>
+
+    <!-- KONZULTÁCIE -->
+    <div class="pricing-cat" id="cat-konzultacie" role="tabpanel" aria-labelledby="tab-konzultacie">
+      <p class="pcat-subtitle">Rýchla jasnozrivosť.</p>
+      <div class="price-list">
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">Konzultácia – 60 min</div>
+            <div class="pi-desc">3–5 konkrétnych odporúčaní, krátke zhrnutie po hovore</div>
+          </div>
+          <div class="pi-right">
+            <div class="pi-price grad">79 €</div>
+          </div>
+        </div>
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">Audit sociálnych sietí</div>
+            <div class="pi-desc">Bio, vizuál, obsah, frekvencia, CTA návrhy, mini plán na 30 dní</div>
+          </div>
+          <div class="pi-right">
+            <div class="pi-price grad">189 €</div>
+            <div class="pi-period">/ 1 profil</div>
+          </div>
+        </div>
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">Obsahová stratégia na 30 dní</div>
+            <div class="pi-desc">Rubriky a témy, tón komunikácie, 30 nápadov, odporúčaný mix formátov</div>
+          </div>
+          <div class="pi-right">
+            <div class="pi-price grad">249 €</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PPC -->
+    <div class="pricing-cat" id="cat-ppc" role="tabpanel" aria-labelledby="tab-ppc">
+      <p class="pcat-subtitle">Každý cent pracuje pre teba.</p>
+
+      <div class="price-section-hdr">JEDNORAZOVÉ</div>
+      <div class="price-list">
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">Nastavenie kampaní</div>
+            <div class="pi-desc">Keyword research, štruktúra kampane, tracking, tvorba reklám.</div>
+          </div>
+          <div class="pi-right">
+            <div class="pi-price grad">150 €</div>
+          </div>
+        </div>
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">PPC audit (existujúce kampane)</div>
+            <div class="pi-desc">Nájdem, kde sa stráca budget a čo okamžite opraviť.</div>
+          </div>
+          <div class="pi-right">
+            <div class="pi-price grad">od 190 €</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="price-section-hdr">MESAČNÁ SPRÁVA</div>
+      <div class="price-list">
+        <div class="price-item pi-featured">
+          <div class="pi-left">
+            <div class="pi-name">Mesačná správa kampaní</div>
+            <div class="pi-desc">Optimalizácia, A/B testy kreatív, úpravy bidov a cielenia, týždenný reporting.</div>
+          </div>
+          <div class="pi-right">
+            <div class="pi-price grad">15 %</div>
+            <div class="pi-period">z reklamného budgetu (min. 120 €/mes)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="price-list">
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">Reklamný budget</div>
+            <div class="pi-desc">Platíš priamo Google alebo Meta — je oddelený od môjho honoráru. Odporúčaný min. budget: Google Ads 300–500 €/mes, Meta Ads 150–300 €/mes.</div>
+          </div>
+          <div class="pi-right">
+            <div class="pi-price grad">zvlášť</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOCIÁLNE SIETE -->
+    <div class="pricing-cat" id="cat-social" role="tabpanel" aria-labelledby="tab-social">
+      <p class="pcat-subtitle">V každom balíku je plán, publikovanie, základné odpovede a mesačný prehľad.</p>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-name">ŠTART</div>
+          <div class="pricing-price"><span class="grad">390 €</span></div>
+          <div class="pricing-period">mesačne</div>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-features">
+            <li><span class="ck">✓</span><span>8× post</span></li>
+            <li><span class="ck">✓</span><span>8× story</span></li>
+            <li><span class="ck">✓</span><span>1× video (z tvojich materiálov)</span></li>
+            <li><span class="ck">✓</span><span>Mesačný prehľad + odporúčania</span></li>
+          </ul>
+          <a href="#kontakt" class="btn-plan btn-outline">Mám záujem →</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="pricing-popular">Najobľúbenejší</div>
+          <div class="pricing-name">RAST</div>
+          <div class="pricing-price"><span class="grad">690 €</span></div>
+          <div class="pricing-period">mesačne</div>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-features">
+            <li><span class="ck">✓</span><span>12× post</span></li>
+            <li><span class="ck">✓</span><span>12× story</span></li>
+            <li><span class="ck">✓</span><span>2× video</span></li>
+            <li><span class="ck">✓</span><span>Odpovede/DM (~30 min/deň, pracovné dni)</span></li>
+            <li><span class="ck">✓</span><span>Mesačný prehľad + plán na ďalší mesiac</span></li>
+          </ul>
+          <a href="#kontakt" class="btn-plan btn-grad">Začnime →</a>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-name">FULL SERVIS</div>
+          <div class="pricing-price"><span class="grad">1 090 €</span></div>
+          <div class="pricing-period">mesačne</div>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-features">
+            <li><span class="ck">✓</span><span>16× post</span></li>
+            <li><span class="ck">✓</span><span>16× story</span></li>
+            <li><span class="ck">✓</span><span>4× video</span></li>
+            <li><span class="ck">✓</span><span>Odpovede/DM (~60 min/deň, pracovné dni)</span></li>
+            <li><span class="ck">✓</span><span>Mini check konkurencie (1× mesačne)</span></li>
+            <li><span class="ck">✓</span><span>2× prehľad (v strede + na konci mesiaca)</span></li>
+          </ul>
+          <a href="#kontakt" class="btn-plan btn-outline">Mám záujem →</a>
+        </div>
+      </div>
+      <div class="price-list" style="margin-top:20px">
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">+ Meta/IG reklamy</div>
+            <div class="pi-desc">Nastavenie, optimalizácia, reporting. Budget ide zvlášť. <em>„Keď chceš, aby to videli aj ľudia mimo tvojej mamy a kamarátov."</em></div>
+          </div>
+          <div class="pi-right">
+            <div class="pi-price grad">150 €</div>
+            <div class="pi-period">nastavenie + 15 % z budgetu (min. 120 €/mes)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEO -->
+    <div class="pricing-cat" id="cat-seo" role="tabpanel" aria-labelledby="tab-seo">
+      <p class="pcat-subtitle">Aby ťa našli.</p>
+      <div class="price-section-hdr">Jednorazové</div>
+      <div class="price-list">
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">SEO audit</div>
+            <div class="pi-desc">Nájdem chyby a poviem ti presne, čo opraviť a v akom poradí.</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">390 €</div></div>
+        </div>
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">Keyword plán</div>
+            <div class="pi-desc">Zistíš, čo ľudia reálne hľadajú. Do 30 slov.</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">290 €</div></div>
+        </div>
+        <div class="price-item pi-featured">
+          <div class="pi-left">
+            <div class="pi-name">SEO štart <span class="badge-new">POPULAR</span></div>
+            <div class="pi-desc">Audit + Keyword plán + Plán na 90 dní</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">690 €</div></div>
+        </div>
+      </div>
+      <div class="price-section-hdr">Mesačné</div>
+      <div class="price-list">
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">Mesačné SEO – ZÁKLAD</div>
+            <div class="pi-desc">Mesačná kontrola, odporúčania, 30 min konzultácia</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">490 €</div><div class="pi-period">/mes</div></div>
+        </div>
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">Mesačné SEO – RAST</div>
+            <div class="pi-desc">Priebežné úpravy, 2 články mesačne (do 3 NS), obsahový plán</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">790 €</div><div class="pi-period">/mes</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WEBY -->
+    <div class="pricing-cat active" id="cat-weby" role="tabpanel" aria-labelledby="tab-weby">
+      <p class="pcat-subtitle">Aby si mal stránku, ktorá funguje.</p>
+      <div class="price-section-hdr">Tvorba webu</div>
+      <div class="price-list">
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">Landing page</div>
+            <div class="pi-desc">1 stránka, štruktúra a dizajn, mobilná verzia, formulár, základné SEO</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">790 €</div></div>
+        </div>
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">WordPress web – ŠTART</div>
+            <div class="pi-desc">Do 5 podstránok, návrh + realizácia, základné nastavenia, školenie správy</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">1 590 €</div></div>
+        </div>
+        <div class="price-item pi-featured">
+          <div class="pi-left">
+            <div class="pi-name">WordPress web – PRO <span class="badge-new">POPULAR</span></div>
+            <div class="pi-desc">Do 10 podstránok, lepší dizajn, optimalizácia rýchlosti, 2 kolá úprav</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">2 290 €</div></div>
+        </div>
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">Web úpravy / vývoj</div>
+            <div class="pi-desc">Opravy, nové sekcie, technické veci</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">49 €</div><div class="pi-period">/hod</div></div>
+        </div>
+      </div>
+      <div class="price-section-hdr">WordPress CARE (údržba)</div>
+      <div class="price-list">
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">ZÁKLAD</div>
+            <div class="pi-desc">Aktualizácie, zálohy, bezpečnosť (1× mesačne)</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">39 €</div><div class="pi-period">/mes</div></div>
+        </div>
+        <div class="price-item pi-featured">
+          <div class="pi-left">
+            <div class="pi-name">ŠTANDARD <span class="badge-new">POPULAR</span></div>
+            <div class="pi-desc">Častejšie kontroly + monitoring + mesačný prehľad</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">79 €</div><div class="pi-period">/mes</div></div>
+        </div>
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">FULL</div>
+            <div class="pi-desc">Priorita + drobné úpravy (1 hod/mes v cene)</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">149 €</div><div class="pi-period">/mes</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRAFIKA -->
+    <div class="pricing-cat" id="cat-grafika" role="tabpanel" aria-labelledby="tab-grafika">
+      <p class="pcat-subtitle">Aby to nebolelo očí.</p>
+      <div class="price-list">
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">Grafika – hodinovka</div>
+            <div class="pi-desc">Bannery, posty, šablóny, úpravy</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">35 €</div><div class="pi-period">/hod</div></div>
+        </div>
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">Logo – ŠTART</div>
+            <div class="pi-desc">2 návrhy + 2 kolá úprav + exporty (SVG/PNG/PDF)</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">290 €</div></div>
+        </div>
+        <div class="price-item pi-featured">
+          <div class="pi-left">
+            <div class="pi-name">Logo + mini manuál</div>
+            <div class="pi-desc">Logo + farby + fonty + základné použitie (1–2 strany)</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">490 €</div></div>
+        </div>
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">Jednoduchý banner</div>
+            <div class="pi-desc">Základný vizuál na web alebo social</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">od 25 €</div></div>
+        </div>
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">Náročnejší banner</div>
+            <div class="pi-desc">Viac verzií, koláže, produkty</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">od 45 €</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TEXTY -->
+    <div class="pricing-cat" id="cat-texty" role="tabpanel" aria-labelledby="tab-texty">
+      <p class="pcat-subtitle">Bez korporátnej omáčky.</p>
+      <div class="price-list">
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">Webové texty</div>
+            <div class="pi-desc">Landing, služby, o nás, sekcie na web. V cene: text + štruktúra + CTA</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">35 €</div><div class="pi-period">/NS</div></div>
+        </div>
+        <div class="price-item">
+          <div class="pi-left">
+            <div class="pi-name">Články (aj SEO)</div>
+            <div class="pi-desc">Článok + čitateľná štruktúra</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">od 45 €</div><div class="pi-period">/NS</div></div>
+        </div>
+        <div class="price-item pi-featured">
+          <div class="pi-left">
+            <div class="pi-name">Balík textov na soc. siete</div>
+            <div class="pi-desc">30 krátkych textov + CTA + návrh hashtagov</div>
+          </div>
+          <div class="pi-right"><div class="pi-price grad">220 €</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rules + CTA -->
+    <div class="price-rules" style="margin-top:28px">
+      <div class="price-rules-title">Podmienky & pravidlá</div>
+      <ul>
+        <li>Minimálna fakturácia: 30 min</li>
+        <li>Expres do 48 h: +30 %</li>
+        <li>Víkendy/sviatky: +50 %</li>
+        <li>Reklamný budget: platí klient zvlášť</li>
+        <li>Platba: jednorazovky vopred / mesačné balíky na začiatku mesiaca</li>
+      </ul>
+    </div>
+
+    <div class="pricing-cta-note">
+      <strong>Nevieš čo vybrať?</strong> Daj si Konzultáciu 60 min (79 €) a povieme si, či má zmysel riešiť skôr obsah, web alebo SEO. Hotovo.<br /><br />
+      <a href="#kontakt" class="btn-primary" style="display:inline-flex">Chcem konzultáciu →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════ REVIEWS ═══════════════════════════ -->
+<section>
+  <div class="container">
+    <div class="section-tag" data-i18n="rv.tag">Referencie</div>
+    <h2 class="section-title"><span data-i18n="rv.title">Čo hovoria</span> <span class="grad" data-i18n="rv.title.g">naši klienti.</span></h2>
+    <p class="section-desc" data-i18n="rv.desc">Hovoríme si spokojní klienti — ale radšej si to prečítajte priamo od nich.</p>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-i18n="r1.t">"Grafiky i texty sú presne také, aké sme potrebovali — moderné, čisté a zákazníci si ich všímajú. Komunikácia bezproblémová, termíny dodržané."</p>
+        <div class="review-author"><div class="review-avatar">EE</div><div><div class="review-name">E.E.K.</div><div class="review-company" data-i18n="r1.c">Adaptiware</div></div></div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-i18n="r2.t">"Rýchla reakcia, jednoduchá komunikácia, výsledky, ktoré vidieť. Presne také, aké to má byť."</p>
+        <div class="review-author"><div class="review-avatar">MM</div><div><div class="review-name">M.M.Š.</div><div class="review-company" data-i18n="r2.c">BMW Košice</div></div></div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-i18n="r3.t">"Konečne niekto, kto rozumie tomu, čo chceme — a neopakuje len buzzwordy. Spolupráca je prirodzená a výsledky hovoria za seba."</p>
+        <div class="review-author"><div class="review-avatar">II</div><div><div class="review-name">I.I.T.</div><div class="review-company" data-i18n="r3.c">NoName</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FAQ ═══════════════════════════ -->
+<section id="faq">
+  <div class="container">
+    <div style="text-align:center;max-width:560px;margin:0 auto">
+      <div class="section-tag" style="justify-content:center" data-i18n="faq.tag">FAQ</div>
+      <h2 class="section-title" style="max-width:100%"><span data-i18n="faq.title">Najčastejšie</span> <span class="grad" data-i18n="faq.title.g">otázky.</span></h2>
+      <p class="section-desc" style="max-width:100%" data-i18n="faq.desc">Odpovedáme priamo. Máte inú otázku? Napíšte nám.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3 data-i18n="faq.1.q">Čo je to PPC a oplatí sa mi to?</h3>
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-answer"><p data-i18n="faq.1.a">PPC (Pay-Per-Click) sú platené reklamy, kde platíš iba za klik — nie za zobrazenie. Google Ads ti zobrazí reklamu ľuďom, ktorí aktívne hľadajú tvoj produkt alebo službu. Ak to správne nastavíš a optimalizuješ, oplatí sa prakticky každému, kto má jasný produkt alebo službu.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3 data-i18n="faq.2.q">Prečo si vybrať teba namiesto agentúry?</h3>
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-answer"><p data-i18n="faq.2.a">V agentúre tvoj projekt rieši junior konzultant, ktorý spravuje 30 ďalších klientov. U mňa komunikuješ priamo so mnou — človekom, ktorý tvoju kampaň naozaj pozná. Žiadne predávanie z ruky do ruky, žiadne zbytočné meetingy, žiadny bullshit.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3 data-i18n="faq.3.q">Koľko to celé stojí?</h3>
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-answer"><p data-i18n="faq.3.a">Závisí od rozsahu. Jednoduchší web začína na 790 €, správa sociálnych sietí od 290 €/mes, PPC správa od 290 €/mes (+ reklamný budget). Konkrétnu ponuku dostanieš po krátkej konzultácii — zadarmo a bez záväzkov.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3 data-i18n="faq.4.q">Ako dlho trvá, kým uvidím výsledky?</h3>
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-answer"><p data-i18n="faq.4.a">PPC kampane začnú prinášať výsledky väčšinou do 2–4 týždňov od spustenia. SEO je dlhodobejšia hra — prvé posuny vidíš po 2–3 mesiacoch, výrazné výsledky po 6+. Web odovzdám zvyčajne do 3–4 týždňov.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3 data-i18n="faq.5.q">Čo je AI Search optimalizácia a prečo ju potrebujem?</h3>
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-answer"><p data-i18n="faq.5.a">AI Search optimalizácia (AEO — Answer Engine Optimization, GEO — Generative Engine Optimization) zabezpečí, že keď niekto zadá dotaz do ChatGPT, Perplexity alebo Gemini, tvoja firma sa objaví v odpovedi. Na rozdiel od klasického SEO, kde optimalizuješ pre Google rankingy, pri AEO/GEO optimalizuješ pre to, ako AI modely sumarizujú a odporúčajú firmy. Zahŕňa štruktúrované dáta, entity optimization, citeability obsahu a budovanie autority v AI zdrojoch.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3 data-i18n="faq.6.q">Pracuješ aj s malými firmami alebo len s väčšími?</h3>
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-answer"><p data-i18n="faq.6.a">Väčšina mojich klientov sú malé a stredné firmy, živnostníci a startupy. Ak si na začiatku a hľadáš niekoho, kto ti pomôže rásť bez zbytočnej byrokracie — som správna adresa.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3 data-i18n="faq.7.q">Ako začneme spoluprácu?</h3>
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-answer"><p data-i18n="faq.7.a">Napíš mi správu alebo zavolaj. Dohodneme si krátky hovor (30 min), kde ti bezplatne zhodnotím situáciu a navrhneme ďalší postup. Bez záväzkov, bez predajného nátlaku.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+<section id="kontakt">
+  <div class="container">
+    <div class="section-tag" data-i18n="ct.tag">Kontakt</div>
+    <h2 class="section-title"><span data-i18n="ct.title">Napíš mi.</span> <span class="grad" data-i18n="ct.title.g">Zvyčajne odpoviem do pár hodín.</span></h2>
+    <p class="section-desc" data-i18n="ct.desc">Prvá konzultácia je vždy bezplatná. Porozprávame sa o tvojom biznise a navrhneme riešenie na mieru.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3 data-i18n="ct.h3">Som tu pre teba.</h3>
+        <p data-i18n="ct.p">Rád sa stretnem osobne alebo zavoláme online. Pracujem s firmami po celom Slovensku, sídlim v Košiciach.</p>
+        <div class="contact-detail"><div class="contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div><div class="contact-text"><strong data-i18n="ct.email">E-mail</strong>ahoj@socka.sk</div></div>
+        <div class="contact-detail"><div class="contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div class="contact-text"><strong data-i18n="ct.phone">Telefón</strong>+421 917 744 642</div></div>
+        <div class="contact-detail"><div class="contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="contact-text"><strong data-i18n="ct.addr">Sídlo</strong><span data-i18n="ct.addr.v">Košice, Slovensko</span></div></div>
+        <div class="contact-detail"><div class="contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="contact-text"><strong data-i18n="ct.hours">Dostupnosť</strong><span data-i18n="ct.hours.v">Zvyčajne odpoviem do pár hodín</span></div></div>
+      </div>
+      <div class="contact-form">
+        <form id="contactForm" onsubmit="submitContact(event)">
+          <!-- Honeypot – skryté pred používateľmi, boty ho vyplnia -->
+          <div style="display:none" aria-hidden="true">
+            <input type="text" name="website" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label data-i18n="f.name">Meno</label><input name="name" type="text" data-i18n-ph="f.name.ph" placeholder="Ján Novák" required /></div>
+            <div class="form-group"><label data-i18n="f.email">E-mail</label><input name="email" type="email" data-i18n-ph="f.email.ph" placeholder="jan@firma.sk" required /></div>
+          </div>
+          <div class="form-group"><label data-i18n="f.company">Firma / web</label><input name="company" type="text" data-i18n-ph="f.company.ph" placeholder="Moja firma s.r.o." /></div>
+          <div class="form-group">
+            <label data-i18n="f.interest">Zaujíma ma</label>
+            <select name="interest">
+              <option data-i18n="f.o1">Vybrať...</option>
+              <option data-i18n="f.o2">Tvorba webu</option>
+              <option data-i18n="f.o3">PPC kampane</option>
+              <option data-i18n="f.o4">Správa sociálnych sietí</option>
+              <option data-i18n="f.o5">SEO optimalizácia</option>
+              <option data-i18n="f.o6">Grafické práce</option>
+              <option data-i18n="f.o7">AI Search optimalizácia</option>
+              <option data-i18n="f.o8">Konzultácia</option>
+              <option data-i18n="f.o9">Nechám sa poradiť</option>
+            </select>
+          </div>
+          <div class="form-group"><label data-i18n="f.msg">Správa</label><textarea name="message" data-i18n-ph="f.msg.ph" placeholder="Stručne opíšte váš biznis..." required></textarea></div>
+          <label class="form-gdpr">
+            <input type="checkbox" name="gdpr" required>
+            Súhlasím so spracovaním osobných údajov v súlade s <a href="/ochrana-osobnych-udajov/" target="_blank">Ochranou osobných údajov</a>. Údaje použijem výlučne na odpoveď na váš dopyt.
+          </label>
+          <button type="submit" id="contactSubmit" class="btn-primary" style="width:100%;justify-content:center;margin-top:8px" data-i18n="f.submit">Odoslať dopyt →</button>
+          <div id="contactMsg" style="display:none; margin-top:16px; padding:14px 18px; border-radius:10px; font-size:.9rem; font-weight:500;"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ CTA BANNER ═══════════════════════════ -->
+<div class="container">
+  <div class="cta-banner">
+    <div class="section-tag" style="justify-content:center;margin-bottom:12px" data-i18n="cta.tag">Začnite dnes</div>
+    <h2><span data-i18n="cta.h1">Menej bullshitu,</span><br /><span class="grad" data-i18n="cta.h1.g">viac zákazníkov.</span></h2>
+    <p data-i18n="cta.desc">Prvá konzultácia je zadarmo. Za 30 minút vám ukážeme, kde máte nevyužitý potenciál a čo s tým spraviť.</p>
+    <div class="cta-btns">
+      <a href="#kontakt" class="btn-primary" data-i18n="cta.btn1">Rezervovať bezplatnú konzultáciu →</a>
+      <a href="tel:+421917744642" class="btn-secondary" data-i18n="cta.btn2">📞 Zavolaj mi</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">socka.</div>
+        <p data-i18n="ft.desc">Digitálny marketing bez bullshitu. Weby, PPC a sociálne siete pre lokálne firmy po celom Slovensku.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="ft.svc">Služby</h4>
+        <ul>
+          <li><a href="/tvorba-webov/" data-i18n="ft.s1">Web dizajn & vývoj</a></li>
+          <li><a href="/ppc-sprava/" data-i18n="ft.s2">PPC kampane</a></li>
+          <li><a href="/social-sprava/" data-i18n="ft.s3">Sociálne siete</a></li>
+          <li><a href="/seo-optimalizacia/" data-i18n="ft.s4">SEO optimalizácia</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="ft.co">O mne</h4>
+        <ul>
+          <li><a href="#preco" data-i18n="ft.c1">O mne</a></li>
+          <li><a href="#ceny" data-i18n="ft.c2">Cenník</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#kontakt" data-i18n="ft.c4">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="ft.ct">Kontakt</h4>
+        <ul>
+          <li><a href="mailto:ahoj@socka.sk">ahoj@socka.sk</a></li>
+          <li><a href="tel:+421917744642">+421 917 744 642</a></li>
+          <li><a href="#">Košice, SK</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="ft.copy">© 2025 socka. Všetky práva vyhradené.</p>
+      <div class="footer-socials">
+        <a href="#" class="footer-social">IG</a>
+        <a href="#" class="footer-social">FB</a>
+        <a href="#" class="footer-social">LI</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════ JAVASCRIPT ═══════════════════════════ -->
+<script>
+/* ── TRANSLATIONS ── */
+const T = {
+  sk: {
+    'nav.services':'Služby','nav.portfolio':'Výsledky','nav.pricing':'Ceny','nav.contact':'Kontakt','nav.cta':'Napíš mi',
+    'hero.badge':'Digitálny marketing bez bullshitu',
+    'hero.h1a':'Socka, čo ti naozaj','hero.h1c':'pomôže rásť online.',
+    'hero.sub':'Toto nie je agentúra plná powerpointov a corporate bullshitov. Toto je socka, čo ti spravuje marketing tak, ako by to spravil kamarát — bez zbytočných kecov a s reálnymi výsledkami.',
+    'hero.btn1':'Napíš mi →','hero.btn2':'Čo ti viem dať',
+    'stat.1':'organický traffic','stat.2':'CAC (akvizičné náklady)','stat.3':'ROAS','stat.4':'projektov',
+    'stat.1s':'/ 6 mes.','stat.2s':'/ 90 dní','stat.3s':'/ 120 dní','stat.4s':'',
+    's.tag':'Čo robím','s.title':'Všetko pre rast','s.title.g':'online.','s.desc':'Weby, kampane a sociálne siete. Jedno miesto, jeden kontakt, reálne výsledky.',
+    'web.title':'Web dizajn & vývoj','web.desc':'Rýchly, moderný web, ktorý premieňa návštevníkov na zákazníkov. Žiadne šablóny zo supermarketu — každý web navrhujeme na mieru.',
+    'web.f1':'Responzívny dizajn (mobil, tablet, PC)','web.f2':'PageSpeed skóre 90+','web.f3':'SEO-ready štruktúra od základu','web.f4':'Integrácia rezervačných systémov','web.f5':'Správa obsahu bez programovania','web.link':'Chcem vlastný web',
+    'ppc.title':'PPC kampane','ppc.desc':'Google Ads a Meta Ads kampane, ktoré nepália budget len tak. Každý cent pracuje pre vás — nastavujeme, optimalizujeme a reportujeme transparentne.',
+    'ppc.f1':'Google Search & Display kampane','ppc.f2':'Facebook & Instagram reklama','ppc.f3':'Remarketing & retargeting','ppc.f4':'Mesačné reporty s reálnymi číslami','ppc.f5':'Optimalizácia konverzného kurzu','ppc.link':'Chcem viac zákazníkov',
+    'soc.title':'Sociálne siete','soc.desc':'Budujeme vám prítomnosť na Instagrame, Facebooku a LinkedIne. Od stratégie cez tvorbu obsahu až po každodennú správu komunity.',
+    'soc.f1':'Mesačná obsahová stratégia','soc.f2':'Tvorba vizuálov & copy','soc.f3':'Pravidelné zverejňovanie (3–5× týždenne)','soc.f4':'Správa komentárov a správ','soc.f5':'Analýza výkonnosti & reporting','soc.link':'Chcem aktívne sociálky',
+    'how.tag':'Ako to funguje','how.title':'Od prvého hovoru po','how.title.g':'výsledky.','how.desc':'Žiadne zdĺhavé onboardingy ani nekonečné schvaľovacie kolá. Sme rýchli, priami a doručujeme.',
+    'step1.n':'01 — HOVOR','step1.t':'Bezplatná konzultácia','step1.d':'Zavoláme si alebo sa stretneme. Povieš čo riešiš, ja poviem čo spraviť. Bez záväzkov, bez omáčok.',
+    'step2.n':'02 — STRATÉGIA','step2.t':'Návrh riešenia','step2.d':'Na základe hovoru pripravím konkrétny plán a cenovú ponuku. Vieš presne, čo dostaneš, do kedy a za koľko.',
+    'step3.n':'03 — VÝSLEDKY','step3.t':'Realizácia & rast','step3.d':'Pustíme sa do práce. Pravidelne ťa informujem, reportujem výsledky a priebežne optimalizujem, aby si rástol/rástla.',
+    'port.tag':'Portfólio','port.title':'Reálne firmy.','port.title.g':'Reálne výsledky.','port.desc':'Každý projekt je iný — preto ku každému pristupujeme individuálne. Tu je zopár firiem, ktorým sme pomohli rásť.',
+    'p1':'E-shop s online objednávkami. Tržby z online kanálu +220 % za prvé tri mesiace.',
+    'p2':'Google Ads pre autoservis. Cena za lead −60 %, rezervácie +140 %.',
+    'p3':'Správa IG & FB. +4 200 followerov za 6 mesiacov, nárast členov +35 %.',
+    'p4':'Web + rezervačný systém + SEO. Organická návštevnosť +310 %, plné rezervácie každý víkend.',
+    'p5':'FB + Google kampane. Cena za lead pod 4 €, 80+ kvalifikovaných záujemcov mesačne.',
+    'p6':'Rebrand + Google Ads. Obsadenosť ambulancie z 60 % na 95 % za 4 mesiace.',
+    'pr.tag':'Cenník','pr.title':'Transparentné ceny.','pr.title.g':'Žiadne prekvapenia.','pr.desc':'Presne viete, čo platíte a čo za to dostanete. Každý projekt najprv konzultujeme — cena vždy zodpovedá rozsahu.','pr.popular':'Najpopulárnejší','pr.note':'Nie ste si istí ktorý balík? ','pr.note.a':'Zavolajte nám — poradíme zadarmo.',
+    'from':'od',
+    'pw.name':'Web','pw.period':'jednorazová platba · do 4 týždňov','pw.f1':'1–5 podstránok na mieru','pw.f2':'Responzívny dizajn','pw.f3':'PageSpeed 90+','pw.f4':'Základné SEO nastavenie','pw.f5':'CMS — obsah si meníte sami','pw.f6':'3 mesiace technická podpora','pw.f7':'PPC kampane','pw.f8':'Správa sociálnych sietí','pw.btn':'Mám záujem →',
+    'pm.name':'Marketing','pm.period':'mesačne · bez viazanosti po 3 mesiacoch','pm.f1':'Google Ads alebo Meta Ads','pm.f2':'Správa 1 sociálnej siete','pm.f3':'Mesačný report výkonnosti','pm.f4':'Tvorba reklamných kreatív','pm.f5':'Priebežná optimalizácia kampaní','pm.f6':'Dedikovaný account manager','pm.f7':'Konzultácie bez limitu','pm.f8':'Vývoj webu v cene','pm.btn':'Začnime →',
+    'pk.name':'Komplet','pk.period':'mesačne · web + marketing v jednom','pk.f1':'Všetko z balíka Marketing','pk.f2':'Správa 2 sociálnych sietí','pk.f3':'Google Ads + Meta Ads súčasne','pk.f4':'Priebežné úpravy webu','pk.f5':'E-mail marketing (newsletter)','pk.f6':'Mesačné strategické stretnutie','pk.f7':'Prioritná podpora (do 4 hodín)','pk.f8':'Web v cene pri ročnom záväzku','pk.btn':'Mám záujem →',
+    'rv.tag':'Referencie','rv.title':'Čo hovoria','rv.title.g':'moji klienti.','rv.desc':'Nechcem ťa presvedčiť slovami — radšej si prečítaj, čo hovoria tí, s ktorými som pracoval.',
+    'r1.t':'"Grafiky i texty sú presne také, aké sme potrebovali — moderné, čisté a zákazníci si ich všímajú. Komunikácia bezproblémová, termíny dodržané."','r1.c':'Adaptiware',
+    'r2.t':'"Rýchla reakcia, jednoduchá komunikácia, výsledky, ktoré vidieť. Presne také, aké to má byť."','r2.c':'BMW Košice',
+    'r3.t':'"Konečne niekto, kto rozumie tomu, čo chceme — a neopakuje len buzzwordy. Spolupráca je prirodzená a výsledky hovoria za seba."','r3.c':'NoName',
+    'faq.tag':'FAQ','faq.title':'Najčastejšie','faq.title.g':'otázky.','faq.desc':'Odpovedám priamo. Máš inú otázku? Napíš mi.',
+    'faq.1.q':'Čo je to PPC a oplatí sa mi to?','faq.1.a':'PPC (Pay-Per-Click) sú platené reklamy, kde platíš iba za klik — nie za zobrazenie. Google Ads ti zobrazí reklamu ľuďom, ktorí aktívne hľadajú tvoj produkt alebo službu. Ak to správne nastavíš a optimalizuješ, oplatí sa prakticky každému, kto má jasný produkt alebo službu.',
+    'faq.2.q':'Prečo si vybrať teba namiesto agentúry?','faq.2.a':'V agentúre tvoj projekt rieši junior konzultant, ktorý spravuje 30 ďalších klientov. U mňa komunikuješ priamo so mnou — človekom, ktorý tvoju kampaň naozaj pozná. Žiadne predávanie z ruky do ruky, žiadne zbytočné meetingy, žiadny bullshit.',
+    'faq.3.q':'Koľko to celé stojí?','faq.3.a':'Závisí od rozsahu. Jednoduchší web začína na 790 €, správa sociálnych sietí od 290 €/mes, PPC správa od 290 €/mes (+ reklamný budget). Konkrétnu ponuku dostanieš po krátkej konzultácii — zadarmo a bez záväzkov.',
+    'faq.4.q':'Ako dlho trvá, kým uvidím výsledky?','faq.4.a':'PPC kampane začnú prinášať výsledky väčšinou do 2–4 týždňov od spustenia. SEO je dlhodobejšia hra — prvé posuny vidíš po 2–3 mesiacoch, výrazné výsledky po 6+. Web odovzdám zvyčajne do 3–4 týždňov.',
+    'faq.5.q':'Čo je AI Search optimalizácia a prečo ju potrebujem?','faq.5.a':'AI Search optimalizácia (AEO — Answer Engine Optimization, GEO — Generative Engine Optimization) zabezpečí, že keď niekto zadá dotaz do ChatGPT, Perplexity alebo Gemini, tvoja firma sa objaví v odpovedi. Na rozdiel od klasického SEO, kde optimalizuješ pre Google rankingy, pri AEO/GEO optimalizuješ pre to, ako AI modely sumarizujú a odporúčajú firmy. Zahŕňa štruktúrované dáta, entity optimization, citeability obsahu a budovanie autority v AI zdrojoch.',
+    'faq.6.q':'Pracuješ aj s malými firmami alebo len s väčšími?','faq.6.a':'Väčšina mojich klientov sú malé a stredné firmy, živnostníci a startupy. Ak si na začiatku a hľadáš niekoho, kto ti pomôže rásť bez zbytočnej byrokracie — som správna adresa.',
+    'faq.7.q':'Ako začneme spoluprácu?','faq.7.a':'Napíš mi správu alebo zavolaj. Dohodneme si krátky hovor (30 min), kde ti bezplatne zhodnotím situáciu a navrhneme ďalší postup. Bez záväzkov, bez predajného nátlaku.',
+    'ct.tag':'Kontakt','ct.title':'Napíš mi.','ct.title.g':'Zvyčajne odpoviem do pár hodín.','ct.desc':'Prvá konzultácia je vždy bezplatná. Porozprávame sa o tvojom biznise a navrhneme riešenie na mieru.',
+    'ct.h3':'Som tu pre teba.','ct.p':'Rád sa stretnem osobne alebo zavoláme online. Pracujem s firmami po celom Slovensku, sídlim v Košiciach.',
+    'ct.email':'E-mail','ct.phone':'Telefón','ct.addr':'Sídlo','ct.addr.v':'Košice, Slovensko','ct.hours':'Dostupnosť','ct.hours.v':'Zvyčajne odpoviem do pár hodín',
+    'f.name':'Meno','f.name.ph':'Ján Novák','f.email':'E-mail','f.email.ph':'jan@firma.sk','f.company':'Firma / web','f.company.ph':'Moja firma s.r.o.','f.interest':'Zaujíma ma','f.msg':'Správa','f.msg.ph':'Stručne opíš tvoj biznis...','f.submit':'Odoslať dopyt →',
+    'f.o1':'Vybrať...','f.o2':'Tvorba webu','f.o3':'PPC kampane','f.o4':'Správa sociálnych sietí','f.o5':'SEO optimalizácia','f.o6':'Grafické práce','f.o7':'AI Search optimalizácia','f.o8':'Konzultácia','f.o9':'Nechám sa poradiť',
+    'cta.tag':'Začni dnes','cta.h1':'Menej bullshitu,','cta.h1.g':'viac zákazníkov.','cta.desc':'Prvá konzultácia je zadarmo. Za 30 minút ti ukážem, kde máš nevyužitý potenciál a čo s tým spraviť.','cta.btn1':'Rezervovať bezplatnú konzultáciu →','cta.btn2':'📞 Zavolaj mi',
+    'ft.desc':'Digitálny marketing bez bullshitu. Weby, PPC a sociálne siete pre firmy po celom Slovensku.','ft.svc':'Služby','ft.s1':'Tvorba webov','ft.s2':'PPC kampane','ft.s3':'Sociálne siete','ft.s4':'SEO optimalizácia','ft.co':'O mne','ft.c1':'O mne','ft.c2':'Cenník','ft.c4':'Kontakt','ft.ct':'Kontakt','ft.copy':'© 2025 socka. Všetky práva vyhradené.'
+  },
+  en: {
+    'nav.services':'Services','nav.portfolio':'Results','nav.pricing':'Pricing','nav.contact':'Contact','nav.cta':'Write me',
+    'hero.badge':'Digital marketing without BS',
+    'hero.h1a':'Socka, that will really','hero.h1c':'help you grow online.',
+    'hero.sub':'This isn\'t an agency full of PowerPoints and corporate BS. This is Socka — marketing handled like a friend would do it. No fluff, real results.',
+    'hero.btn1':'Write me →','hero.btn2':'What I can do for you',
+    'stat.1':'organic traffic','stat.2':'CAC (acquisition cost)','stat.3':'ROAS','stat.4':'projects',
+    'stat.1s':'/ 6 mo.','stat.2s':'/ 90 days','stat.3s':'/ 120 days','stat.4s':'',
+    's.tag':'What I do','s.title':'Everything for growth','s.title.g':'online.','s.desc':'Websites, campaigns and social media. One place, one contact, real results.',
+    'web.title':'Web Design & Development','web.desc':'Fast, modern websites that turn visitors into customers. No off-the-shelf templates — every site is designed and built custom.',
+    'web.f1':'Responsive design (mobile, tablet, desktop)','web.f2':'PageSpeed score 90+','web.f3':'SEO-ready structure from the ground up','web.f4':'Booking system integration','web.f5':'Content management without coding','web.link':'I want my own website',
+    'ppc.title':'PPC Campaigns','ppc.desc':'Google Ads and Meta Ads campaigns that don\'t burn your budget. Every cent works for you — we set up, optimize and report transparently.',
+    'ppc.f1':'Google Search & Display campaigns','ppc.f2':'Facebook & Instagram advertising','ppc.f3':'Remarketing & retargeting','ppc.f4':'Monthly reports with real numbers','ppc.f5':'Conversion rate optimization (CRO)','ppc.link':'I want more customers',
+    'soc.title':'Social Media','soc.desc':'We build your presence on Instagram, Facebook and LinkedIn. From strategy through content creation to daily community management.',
+    'soc.f1':'Monthly content strategy','soc.f2':'Visuals & copy creation','soc.f3':'Regular posting (3–5× per week)','soc.f4':'Comment & message management','soc.f5':'Performance analysis & reporting','soc.link':'I want active social media',
+    'how.tag':'How it works','how.title':'From the first call to','how.title.g':'real results.','how.desc':'No lengthy onboardings or endless approval rounds. We\'re fast, direct and we deliver.',
+    'step1.n':'01 — CALL','step1.t':'Free Consultation','step1.d':'We\'ll call or meet up. You tell me what you\'re dealing with, I\'ll tell you what to do. No commitment, no fluff.',
+    'step2.n':'02 — STRATEGY','step2.t':'Solution Proposal','step2.d':'Based on the call I prepare a concrete plan and price quote. You know exactly what you\'ll get, by when and for how much.',
+    'step3.n':'03 — RESULTS','step3.t':'Execution & Growth','step3.d':'We get to work. I keep you updated, report results and continuously optimise so you keep growing.',
+    'port.tag':'Portfolio','port.title':'Real businesses.','port.title.g':'Real results.','port.desc':'Every project is different — which is why we approach each one individually. Here are a few businesses we\'ve helped grow.',
+    'p1':'Online order e-shop. Online channel revenue +220% in the first three months.',
+    'p2':'Google Ads for auto repair shop. Cost per lead −60%, bookings +140%.',
+    'p3':'IG & FB management. +4,200 followers in 6 months, membership +35%.',
+    'p4':'Website + booking system + SEO. Organic traffic +310%, fully booked every weekend.',
+    'p5':'FB + Google campaigns. Cost per lead under €4, 80+ qualified leads monthly.',
+    'p6':'Rebrand + Google Ads. Practice occupancy from 60% to 95% in 4 months.',
+    'pr.tag':'Pricing','pr.title':'Transparent pricing.','pr.title.g':'No surprises.','pr.desc':'You know exactly what you pay and what you get. We always consult first — the price always matches the scope.','pr.popular':'Most Popular','pr.note':'Not sure which plan? ','pr.note.a':'Call us — we\'ll advise for free.',
+    'from':'from',
+    'pw.name':'Website','pw.period':'one-time payment · delivered in 4 weeks','pw.f1':'Custom 1–5 subpages','pw.f2':'Responsive design','pw.f3':'PageSpeed 90+','pw.f4':'Basic SEO setup','pw.f5':'CMS — edit content yourself','pw.f6':'3 months technical support','pw.f7':'PPC campaigns','pw.f8':'Social media management','pw.btn':'I\'m interested →',
+    'pm.name':'Marketing','pm.period':'monthly · no lock-in after 3 months','pm.f1':'Google Ads or Meta Ads','pm.f2':'1 social media platform','pm.f3':'Monthly performance report','pm.f4':'Ad creative production','pm.f5':'Continuous campaign optimization','pm.f6':'Dedicated account manager','pm.f7':'Unlimited consultations','pm.f8':'Website development included','pm.btn':'Let\'s start →',
+    'pk.name':'Complete','pk.period':'monthly · website + marketing in one','pk.f1':'Everything from Marketing plan','pk.f2':'2 social media platforms','pk.f3':'Google Ads + Meta Ads simultaneously','pk.f4':'Ongoing website updates','pk.f5':'Email marketing (newsletter)','pk.f6':'Monthly strategy meeting','pk.f7':'Priority support (within 4 hours)','pk.f8':'Website included with annual commitment','pk.btn':'I\'m interested →',
+    'rv.tag':'Testimonials','rv.title':'What my','rv.title.g':'clients say.','rv.desc':'Don\'t take my word for it — read it straight from the people I\'ve worked with.',
+    'r1.t':'"The visuals and copy are exactly what we needed — modern, clean and customers notice them. Communication smooth, deadlines met."','r1.c':'Adaptiware',
+    'r2.t':'"Fast responses, simple communication, results you can see. Exactly how it should be."','r2.c':'BMW Košice',
+    'r3.t':'"Finally someone who actually understands what we want — and doesn\'t just repeat buzzwords. The collaboration feels natural and the results speak for themselves."','r3.c':'NoName',
+    'faq.tag':'FAQ','faq.title':'Frequently asked','faq.title.g':'questions.','faq.desc':'Straight answers. Got another question? Drop me a message.',
+    'faq.1.q':'What is PPC and is it worth it for me?','faq.1.a':'PPC (Pay-Per-Click) are paid ads where you only pay per click — not per impression. Google Ads shows your ad to people actively searching for your product or service. When set up and optimised correctly, it works for pretty much anyone with a clear product or service.',
+    'faq.2.q':'Why choose you over an agency?','faq.2.a':'At an agency, your project is handled by a junior who manages 30 other clients. With me, you talk directly to the person who actually knows your campaign. No hand-offs, no pointless meetings, no BS.',
+    'faq.3.q':'How much does it cost?','faq.3.a':'Depends on scope. A simple website starts at €790, social media management from €290/month, PPC management from €290/month (+ ad budget). You\'ll get a specific quote after a short free consultation.',
+    'faq.4.q':'How long until I see results?','faq.4.a':'PPC campaigns typically start delivering within 2–4 weeks of launch. SEO is a longer game — first movements within 2–3 months, significant results after 6+. Websites are usually delivered within 3–4 weeks.',
+    'faq.5.q':'What is AI Search optimisation and why do I need it?','faq.5.a':'AI Search optimisation (AEO — Answer Engine Optimization, GEO — Generative Engine Optimization) ensures that when someone asks ChatGPT, Perplexity or Gemini a question in your field or location, your business appears in the answer. Unlike traditional SEO where you optimise for Google rankings, with AEO/GEO you optimise for how AI models summarise and recommend businesses. It covers structured data, entity optimisation, content citeability and building authority in AI sources.',
+    'faq.6.q':'Do you work with small businesses or only larger ones?','faq.6.a':'Most of my clients are small and medium businesses, sole traders and startups. If you\'re early-stage and looking for someone to help you grow without the red tape — you\'re in the right place.',
+    'faq.7.q':'How do we get started?','faq.7.a':'Send me a message or give me a call. We\'ll arrange a quick call (30 min) where I\'ll review your situation for free and suggest next steps. No commitment, no sales pressure.',
+    'ct.tag':'Contact','ct.title':'Get in touch.','ct.title.g':'I usually reply within the hour.','ct.desc':'The first consultation is always free. We\'ll talk about your business and propose a tailored solution.',
+    'ct.h3':'I\'m here for you.','ct.p':'Happy to meet in person or call online. I work with businesses across Slovakia, based in Košice.',
+    'ct.email':'Email','ct.phone':'Phone','ct.addr':'Location','ct.addr.v':'Košice, Slovakia','ct.hours':'Availability','ct.hours.v':'Usually reply within the hour',
+    'f.name':'Name','f.name.ph':'John Smith','f.email':'Email','f.email.ph':'john@company.com','f.company':'Company / website','f.company.ph':'My Company Ltd.','f.interest':'I\'m interested in','f.msg':'Message','f.msg.ph':'Briefly describe your business...','f.submit':'Send enquiry →',
+    'f.o1':'Select...','f.o2':'Website development','f.o3':'PPC campaigns','f.o4':'Social media management','f.o5':'SEO optimisation','f.o6':'Graphic design','f.o7':'AI Search optimisation','f.o8':'Consultation','f.o9':'Not sure yet',
+    'cta.tag':'Start today','cta.h1':'Less BS,','cta.h1.g':'more customers.','cta.desc':'First consultation is free. In 30 minutes I\'ll show you where you have untapped potential and what to do about it.','cta.btn1':'Book a free consultation →','cta.btn2':'📞 Call me',
+    'ft.desc':'Digital marketing without BS. Websites, PPC and social media for businesses across Slovakia.','ft.svc':'Services','ft.s1':'Website development','ft.s2':'PPC campaigns','ft.s3':'Social media','ft.s4':'SEO optimisation','ft.co':'About','ft.c1':'About me','ft.c2':'Pricing','ft.c4':'Contact','ft.ct':'Contact','ft.copy':'© 2025 socka. All rights reserved.'
+  }
+};
+
+/* ── STATE ── */
+let currentLang = localStorage.getItem('socka-lang') || 'sk';
+let currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+
+/* ── LANGUAGE ── */
+function setLang(lang) {
+  currentLang = lang;
+  localStorage.setItem('socka-lang', lang);
+  document.documentElement.lang = lang;
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const v = T[lang][el.dataset.i18n];
+    if (v !== undefined) el.textContent = v;
+  });
+  document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+    const v = T[lang][el.dataset.i18nPh];
+    if (v !== undefined) el.placeholder = v;
+  });
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+}
+
+/* ── THEME ── */
+const ICON_SUN = `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`;
+const ICON_MOON = `<svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
+
+function updateThemeIcon() {
+  const btn = document.getElementById('themeBtn');
+  if (btn) btn.innerHTML = currentTheme === 'dark' ? ICON_SUN : ICON_MOON;
+}
+
+function toggleTheme() {
+  currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', currentTheme);
+  localStorage.setItem('socka-theme', currentTheme);
+  updateThemeIcon();
+}
+
+/* ── MOBILE MENU ── */
+function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+function closeMobile() { document.getElementById('mobileMenu').classList.remove('open'); }
+function toggleMobileServices() {
+  const sub = document.getElementById('mobileSub');
+  const btn = document.getElementById('mobileServicesBtn');
+  const open = sub.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open);
+}
+document.addEventListener('click', e => {
+  const m = document.getElementById('mobileMenu');
+  if (!m.contains(e.target) && !e.target.closest('.hamburger')) m.classList.remove('open');
+});
+
+/* ── PRICING TABS ── */
+function showCat(id) {
+  document.querySelectorAll('.pricing-cat').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.pricing-tab').forEach(t => {
+    t.classList.remove('active');
+    t.setAttribute('aria-selected', 'false');
+  });
+  const cat = document.getElementById('cat-' + id);
+  if (cat) cat.classList.add('active');
+  document.querySelectorAll('.pricing-tab').forEach(t => {
+    if (t.getAttribute('onclick') === "showCat('" + id + "')") {
+      t.classList.add('active');
+      t.setAttribute('aria-selected', 'true');
+    }
+  });
+}
+
+/* ── FAQ ── */
+function toggleFaq(el) {
+  const item = el.closest('.faq-item');
+  const was = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!was) item.classList.add('open');
+}
+
+/* ── HEADER SCROLL ── */
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY > 20;
+  document.getElementById('header').classList.toggle('scrolled', scrolled);
+  document.getElementById('mobileMenu').classList.toggle('scrolled-up', scrolled);
+}, { passive: true });
+
+/* ── SMOOTH SCROLL ── */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if (id === '#') return;
+    const el = document.querySelector(id);
+    if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
+  });
+});
+
+/* ── SCROLL ANIMATIONS ── */
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; } });
+}, { threshold: 0.08 });
+document.querySelectorAll('.service-card,.pricing-card,.review-card,.portfolio-card,.step').forEach(el => {
+  el.style.opacity='0'; el.style.transform='translateY(22px)';
+  el.style.transition='opacity .5s ease, transform .5s ease';
+  obs.observe(el);
+});
+
+/* ── INIT ── */
+document.addEventListener('DOMContentLoaded', () => {
+  updateThemeIcon();
+  setLang(currentLang);
+  // restore lang btn state
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === currentLang));
+});
+</script>
+
+<!-- GEO / AEO entity block — for AI crawlers -->
+<div class="sr-only" aria-hidden="true" itemscope itemtype="https://schema.org/LocalBusiness">
+  <span itemprop="name">Socka</span> je digitálna marketingová služba prevádzkovaná
+  <span itemprop="founder" itemscope itemtype="https://schema.org/Person">
+    <span itemprop="name">Udemky</span>
+  </span>
+  so sídlom v <span itemprop="addressLocality">Košiciach</span>,
+  <span itemprop="addressCountry">Slovensko</span>.
+  Kontakt: <span itemprop="email">ahoj@socka.sk</span>,
+  <span itemprop="telephone">+421917744642</span>.
+  Webová stránka: <span itemprop="url">https://socka.sk</span>.
+  Poskytované služby: tvorba webov WordPress, PPC kampane Google Ads Meta Ads,
+  správa sociálnych sietí Instagram Facebook LinkedIn, SEO optimalizácia,
+  AI Search optimalizácia AEO GEO pre ChatGPT Perplexity Gemini.
+  Skúsenosti: 20 rokov v reklame, 10 rokov v digitálnom marketingu, 500 projektov.
+</div>
+<script src="/assets/shared.js"></script>
+<script>
+async function submitContact(e) {
+  e.preventDefault();
+  const form = document.getElementById('contactForm');
+  const btn  = document.getElementById('contactSubmit');
+  const msg  = document.getElementById('contactMsg');
+
+  btn.disabled = true;
+  btn.textContent = 'Odosielam…';
+
+  try {
+    const res  = await fetch('/contact.php', { method: 'POST', body: new FormData(form) });
+    const data = await res.json();
+
+    if (data.ok) {
+      msg.style.display = 'block';
+      msg.style.background = 'rgba(16,185,129,.12)';
+      msg.style.border = '1px solid rgba(16,185,129,.3)';
+      msg.style.color = '#10b981';
+      msg.textContent = '✓ Správa odoslaná. Ozvem sa do pár hodín.';
+      form.reset();
+      btn.style.display = 'none';
+    } else {
+      throw new Error(data.message || 'Chyba');
+    }
+  } catch (err) {
+    msg.style.display = 'block';
+    msg.style.background = 'rgba(239,68,68,.1)';
+    msg.style.border = '1px solid rgba(239,68,68,.25)';
+    msg.style.color = '#ef4444';
+    msg.textContent = '✗ ' + (err.message || 'Niečo sa pokazilo. Skús napísať priamo na ahoj@socka.sk');
+    btn.disabled = false;
+    btn.textContent = 'Odoslať dopyt →';
+  }
+}
+</script>
+</body>
+</html>

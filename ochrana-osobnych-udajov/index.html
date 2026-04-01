@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="sk" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ochrana osobných údajov | socka.sk</title>
+  <meta name="description" content="Informácie o spracovaní osobných údajov v súlade s GDPR na webstránke socka.sk." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://socka.sk/ochrana-osobnych-udajov/" />
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/shared.css" />
+  <script>(function(){try{var t=localStorage.getItem('socka-theme');if(t)document.documentElement.setAttribute('data-theme',t);else if(window.matchMedia('(prefers-color-scheme:dark)').matches)document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
+</head>
+<body>
+
+<header id="header">
+  <div class="container">
+    <nav>
+      <a href="/" class="logo">socka.</a>
+      <ul class="nav-links">
+        <li><a href="/#sluzby">Služby</a></li>
+        <li><a href="/#vysledky">Výsledky</a></li>
+        <li><a href="/#preco">O mne</a></li>
+        <li><a href="/#kontakt">Kontakt</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="Toggle theme"></button>
+        <a href="/#kontakt" class="nav-cta"><span>Napíš mi</span><span class="nav-cta-arrow">→</span></a>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="toggleMenu()" aria-label="Zavrieť">✕</button>
+  <a href="/#sluzby" onclick="closeMobile()">Služby</a>
+  <a href="/#vysledky" onclick="closeMobile()">Výsledky</a>
+  <a href="/#preco" onclick="closeMobile()">O mne</a>
+  <a href="/#kontakt" onclick="closeMobile()">Kontakt</a>
+  <div class="mobile-footer">
+    <a href="/#kontakt" class="mobile-cta" onclick="closeMobile()"><span>Napíš mi →</span></a>
+  </div>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-badge">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      GDPR
+    </div>
+    <h1>Ochrana osobných údajov</h1>
+    <p class="subtitle">Informácie o spracovaní osobných údajov v súlade s nariadením GDPR (EÚ) 2016/679.</p>
+  </div>
+</section>
+
+<section style="padding: 80px 0 120px;">
+  <div class="container">
+    <div style="max-width: 740px; margin: 0 auto; line-height: 1.8; color: var(--text);">
+
+      <style>
+        .gdpr-doc h2 { font-size: 1.3rem; font-weight: 700; margin: 48px 0 12px; color: var(--text); }
+        .gdpr-doc h3 { font-size: 1rem; font-weight: 600; margin: 28px 0 8px; color: var(--text); }
+        .gdpr-doc p, .gdpr-doc li { font-size: .95rem; color: var(--text-muted); margin-bottom: 10px; }
+        .gdpr-doc ul { padding-left: 20px; }
+        .gdpr-doc a { color: var(--accent); }
+        .gdpr-doc table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: .88rem; }
+        .gdpr-doc th { text-align: left; padding: 10px 14px; background: var(--bg-card); border: 1px solid var(--border); color: var(--text); font-weight: 600; }
+        .gdpr-doc td { padding: 10px 14px; border: 1px solid var(--border); color: var(--text-muted); vertical-align: top; }
+        .gdpr-doc .updated { font-size: .8rem; color: var(--text-dim); margin-bottom: 40px; }
+      </style>
+
+      <div class="gdpr-doc">
+
+        <p class="updated">Posledná aktualizácia: 1. apríla 2025</p>
+
+        <h2>1. Prevádzkovateľ</h2>
+        <p>
+          <strong>Adam Štefanek</strong> (ďalej „prevádzkovateľ")<br>
+          Sídlo: Košice, Slovenská republika<br>
+          E-mail: <a href="mailto:ahoj@socka.sk">ahoj@socka.sk</a><br>
+          Telefón: <a href="tel:+421917744642">+421 917 744 642</a><br>
+          Web: <a href="https://socka.sk">socka.sk</a>
+        </p>
+
+        <h2>2. Aké údaje zbierame a prečo</h2>
+
+        <h3>2.1 Kontaktný formulár</h3>
+        <p>Keď vyplníte formulár na tejto stránke, zbierame:</p>
+        <ul>
+          <li>Meno a priezvisko</li>
+          <li>E-mailovú adresu</li>
+          <li>Telefónne číslo (ak ho uvediete)</li>
+          <li>Názov firmy / webstránky (ak ho uvediete)</li>
+          <li>Obsah správy</li>
+        </ul>
+        <p><strong>Účel:</strong> Zodpovedanie dopytu a prípadná ďalšia komunikácia súvisiaca so spoluprácou.<br>
+        <strong>Právny základ:</strong> Čl. 6 ods. 1 písm. b) GDPR – plnenie zmluvy / predzmluvné kroky, resp. čl. 6 ods. 1 písm. a) GDPR – súhlas.<br>
+        <strong>Doba uchovávania:</strong> Maximálne 2 roky od poslednej komunikácie, alebo do odvolania súhlasu.</p>
+
+        <h3>2.2 Google Analytics (cookies)</h3>
+        <p>Ak udelíte súhlas s analytickými cookies, používame Google Analytics 4 na meranie návštevnosti webu. Zbierajú sa anonymizované údaje o správaní návštevníkov (počet návštev, stránky, trvanie relácie, geografická poloha na úrovni krajiny).</p>
+        <p><strong>Právny základ:</strong> Čl. 6 ods. 1 písm. a) GDPR – váš súhlas.<br>
+        <strong>Prevádzkovateľ cookies:</strong> Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.<br>
+        <strong>Viac info:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.<br>
+        <strong>Doba uchovávania:</strong> Cookies sa ukladajú na 13 mesiacov. Súhlas môžete kedykoľvek odvolať zmazaním cookies v prehliadači.</p>
+
+        <table>
+          <tr><th>Cookie</th><th>Účel</th><th>Platnosť</th></tr>
+          <tr><td>_ga</td><td>Rozlišuje návštevníkov (GA4)</td><td>13 mesiacov</td></tr>
+          <tr><td>_ga_XXXXXXXXXX</td><td>Relácia GA4</td><td>13 mesiacov</td></tr>
+          <tr><td>socka-cookie-consent</td><td>Uloženie vašej voľby ohľadom cookies</td><td>12 mesiacov (localStorage)</td></tr>
+          <tr><td>socka-theme</td><td>Uloženie zvoleného farebného režimu</td><td>Bez platnosti (localStorage)</td></tr>
+        </table>
+
+        <h2>3. Kto má prístup k vašim údajom</h2>
+        <p>Osobné údaje neposkytujeme tretím stranám na marketingové účely. Môžu k nim mať prístup:</p>
+        <ul>
+          <li><strong>Hostingová spoločnosť:</strong> WebSupport, s.r.o. (spracovateľ, zmluva o spracovaní) – pre technickú prevádzku servera</li>
+          <li><strong>Google LLC</strong> – iba ak udelíte súhlas s analytickými cookies</li>
+        </ul>
+
+        <h2>4. Vaše práva</h2>
+        <p>Podľa GDPR máte právo:</p>
+        <ul>
+          <li><strong>Na prístup</strong> k vašim osobným údajom</li>
+          <li><strong>Na opravu</strong> nesprávnych údajov</li>
+          <li><strong>Na vymazanie</strong> („právo byť zabudnutý")</li>
+          <li><strong>Na obmedzenie spracovania</strong></li>
+          <li><strong>Na prenosnosť údajov</strong></li>
+          <li><strong>Namietať</strong> voči spracovaniu</li>
+          <li><strong>Odvolať súhlas</strong> kedykoľvek bez vplyvu na zákonnosť predchádzajúceho spracovania</li>
+        </ul>
+        <p>Žiadosť pošlite na <a href="mailto:ahoj@socka.sk">ahoj@socka.sk</a>. Odpovieme do 30 dní.</p>
+        <p>Máte tiež právo podať sťažnosť na <strong>Úrad na ochranu osobných údajov SR</strong>:<br>
+        Hraničná 12, 820 07 Bratislava, <a href="https://www.uoou.sk" target="_blank" rel="noopener">www.uoou.sk</a></p>
+
+        <h2>5. Bezpečnosť</h2>
+        <p>Web beží na zabezpečenom HTTPS spojení. Formulárové údaje sú prenášané šifrovane. Prístup k e-mailom je chránený heslom.</p>
+
+        <h2>6. Zmeny tohto dokumentu</h2>
+        <p>V prípade zmeny podmienok aktualizujeme dátum v záhlaví. Odporúčame túto stránku občasne navštíviť.</p>
+
+        <h2>7. Kontakt</h2>
+        <p>Otázky ohľadom ochrany osobných údajov zasielajte na <a href="mailto:ahoj@socka.sk">ahoj@socka.sk</a>.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">socka.</div>
+        <p>Freelance digitálny marketing pre malé a stredné firmy. Košice, Slovensko.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Služby</h4>
+        <ul>
+          <li><a href="/tvorba-webov/">Web dizajn &amp; vývoj</a></li>
+          <li><a href="/ppc-sprava/">PPC kampane</a></li>
+          <li><a href="/social-sprava/">Sociálne siete</a></li>
+          <li><a href="/seo-optimalizacia/">SEO optimalizácia</a></li>
+          <li><a href="/ai-search-optimalizacia/">AI Search</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Právne</h4>
+        <ul>
+          <li><a href="/ochrana-osobnych-udajov/">Ochrana osobných údajov</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="mailto:ahoj@socka.sk">ahoj@socka.sk</a></li>
+          <li><a href="tel:+421917744642">+421 917 744 642</a></li>
+          <li>Košice, Slovensko</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 socka. Všetky práva vyhradené.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/shared.js"></script>
+</body>
+</html>

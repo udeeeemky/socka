@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="sk" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tvorba webov – moderné weby, ktoré konvertujú | socka.sk</title>
+  <meta name="description" content="Navrhujem a vyvíjam rýchle, SEO-ready weby a e-shopy, ktoré vyzerajú skvele a prinášajú výsledky. PageSpeed 90+, Core Web Vitals, CMS správa." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Socka – Adam Štefanek, Košice" />
+  <link rel="canonical" href="https://socka.sk/tvorba-webov/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tvorba webov – moderné weby, ktoré konvertujú | socka.sk" />
+  <meta property="og:description" content="Navrhujem a vyvíjam rýchle, SEO-ready weby a e-shopy, ktoré vyzerajú skvele a prinášajú výsledky." />
+  <meta property="og:image" content="https://socka.sk/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:image" content="https://socka.sk/assets/og-image.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://socka.sk/tvorba-webov/" />
+  <meta property="og:locale" content="sk_SK" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tvorba webov | socka.sk" />
+  <meta name="twitter:description" content="Rýchle, SEO-ready weby a e-shopy. PageSpeed 90+, Core Web Vitals, CMS." />
+
+  <!-- Fonts -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/assets/shared.css" />
+
+  <!-- FOUC prevention -->
+  <script>
+    (function(){
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light') document.documentElement.setAttribute('data-theme','light');
+        else document.documentElement.setAttribute('data-theme','dark');
+      } catch(e) {}
+    })();
+  </script>
+
+  <!-- JSON-LD: Service + FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Tvorba webov",
+    "description": "Navrhujem a vyvíjam rýchle, SEO-ready weby a e-shopy s PageSpeed 90+, Core Web Vitals a CMS správou obsahu.",
+    "provider": {
+      "@type": "Person",
+      "name": "Adam Štefanek",
+      "url": "https://socka.sk",
+      "address": { "@type": "PostalAddress", "addressLocality": "Košice", "addressCountry": "SK" }
+    },
+    "areaServed": "SK",
+    "url": "https://socka.sk/tvorba-webov/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Ako dlho trvá tvorba webu?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Jednoduchý web trvá 2–4 týždne, komplexnejší projekt (e-shop, rozsiahly web) 4–6 týždňov. Záleží od rozsahu a rýchlosti dodania podkladov." }
+      },
+      {
+        "@type": "Question",
+        "name": "Vieš spraviť e-shop?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Áno, robím e-shopy na WooCommerce aj vlastných riešeniach. Vrátane platobných brán, správy produktov a SEO optimalizácie." }
+      },
+      {
+        "@type": "Question",
+        "name": "Čo všetko je zahrnuté v cene webu?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Dizajn, vývoj, základné SEO nastavenie, responzívna verzia pre mobily, nasadenie na hosting a zaškolenie na CMS. Doménu a hosting hradíš ty." }
+      },
+      {
+        "@type": "Question",
+        "name": "Postaráš sa aj o údržbu webu?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Viem ponúknuť mesačný retainer na údržbu, aktualizácie a malé zmeny. Cena závisí od rozsahu." }
+      }
+    ]
+  }
+  </script>
+  <link rel="alternate" hreflang="sk" href="https://socka.sk/tvorba-webov/">
+  <link rel="alternate" hreflang="x-default" href="https://socka.sk/tvorba-webov/">
+</head>
+
+<body>
+
+<!-- ═══════════════════════════ ANNOUNCEMENT BANNER ═══════════════════════════ -->
+<div class="ann-banner">
+  <a href="/ai-search-optimalizacia/">
+    <span class="ann-tag">✦ NOVINKA</span>
+    <span>AI Search optimalizácia – buď citovaný v ChatGPT, Perplexity, Claude a ďalších</span>
+    <span class="ann-arrow">→</span>
+  </a>
+</div>
+
+<!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
+<header id="header">
+  <div class="container">
+    <nav>
+      <a href="/" class="logo">socka.</a>
+
+      <ul class="nav-links">
+        <li class="nav-dropdown">
+          <a href="/#sluzby">Služby <span class="dropdown-chevron">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="/tvorba-webov/"><span class="dropdown-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg></span> Tvorba webov</a>
+            <a href="/ppc-sprava/"><span class="dropdown-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/></svg></span> PPC správa</a>
+            <a href="/social-sprava/"><span class="dropdown-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-2.5 4-6 4c-3.5 0-6 4-6 4s-2.5 4-6 4"/><circle cx="18" cy="4" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="6" cy="20" r="2"/></svg></span> Sociálne siete</a>
+            <a href="/seo-optimalizacia/"><span class="dropdown-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></span> SEO optimalizácia</a>
+            <a href="/graficke-prace/"><span class="dropdown-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg></span> Grafické práce</a>
+            <a href="/ai-search-optimalizacia/"><span class="dropdown-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 6v6l4 2"/></svg></span> AI Search <span class="dropdown-new">NOVINKA</span></a>
+          </div>
+        </li>
+        <li><a href="/#vysledky">Výsledky</a></li>
+        <li><a href="/#preco">O mne</a></li>
+        <li><a href="/#ceny">Ceny</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="/#kontakt">Kontakt</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="Toggle theme"></button>
+        <a href="/#kontakt" class="nav-cta">
+          <span>Napíš mi</span>
+          <span class="nav-cta-arrow">→</span>
+        </a>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-services-toggle" onclick="toggleMobileServices()" aria-expanded="false" id="mobileServicesBtn">
+    <span>Služby</span>
+    <span class="dropdown-chevron">▾</span>
+  </button>
+  <div class="mobile-sub" id="mobileSub">
+    <a href="/tvorba-webov/" onclick="closeMobile()">Tvorba webov</a>
+    <a href="/ppc-sprava/" onclick="closeMobile()">PPC správa</a>
+    <a href="/social-sprava/" onclick="closeMobile()">Sociálne siete</a>
+    <a href="/seo-optimalizacia/" onclick="closeMobile()">SEO optimalizácia</a>
+    <a href="/graficke-prace/" onclick="closeMobile()">Grafické práce</a>
+    <a href="/ai-search-optimalizacia/" onclick="closeMobile()">AI Search</a>
+  </div>
+  <a href="/#vysledky" onclick="closeMobile()">Výsledky</a>
+  <a href="/#preco" onclick="closeMobile()">O mne</a>
+  <a href="/#ceny" onclick="closeMobile()">Ceny</a>
+  <a href="/#faq" onclick="closeMobile()">FAQ</a>
+  <a href="/#kontakt" onclick="closeMobile()">Kontakt</a>
+  <div class="mobile-footer">
+    <a href="/#kontakt" class="mobile-cta" onclick="closeMobile()">Napíš mi →</a>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ PAGE HERO ═══════════════════════════ -->
+<section class="page-hero grid-bg">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">socka.sk</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Tvorba webov</span>
+    </nav>
+    <div class="page-badge">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>
+      Web dizajn & vývoj
+    </div>
+    <h1>Weby, ktoré vyzerajú skvele <em>a naozaj predávajú</em></h1>
+    <p class="subtitle">Žiadne page builder šablóny. Navrhujem a vyvíjam weby a e-shopy na WordPress (vlastná téma) alebo moderných technológiách – s PageSpeed 90+, SEO základom a spustením do 30 dní.</p>
+    <div class="cta-group">
+      <a href="/#kontakt" class="btn-primary">Chcem web →</a>
+      <a href="#ceny" class="btn-outline">Pozrieť ceny</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FEATURES ═══════════════════════════ -->
+<section style="padding: 90px 0">
+  <div class="container">
+    <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 12px;">Čo dostaneš</h2>
+    <p style="color: var(--text-muted); max-width: 520px;">Každý web, ktorý robím, má tieto základy. Nie ako extra, ale ako štandard.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon fi-green">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3>PageSpeed 90+</h3>
+        <p>Rýchlosť načítania priamo ovplyvňuje konverzie aj Google ranking. Každý web optimalizujem na Core Web Vitals.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon fi-green">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </div>
+        <h3>SEO-ready od základov</h3>
+        <p>Správna URL štruktúra, meta tagy, schema markup, sitemap – všetko nastavené hneď, nie neskôr.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon fi-green">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <h3>100% responzívny</h3>
+        <p>Väčšina návštevníkov príde cez mobil. Web musí vyzerať a fungovať perfektne na každom zariadení.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon fi-cyan">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <h3>CMS na správu obsahu</h3>
+        <p>Dostaneš jednoduché rozhranie, kde si sám upravíš texty, pridáš produkty alebo blogové články bez programátora.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon fi-cyan">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>HTTPS & bezpečnosť</h3>
+        <p>SSL certifikát, ochrana pred základnými útokmi, pravidelné zálohy – tvoj web je v bezpečí.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon fi-cyan">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 16 4-4 4 4 4-4"/></svg>
+        </div>
+        <h3>Google Analytics & Tracking</h3>
+        <p>Nainštalujem GA4, nastavím conversion tracking cez GTM, aby si od prvého dňa vedel, kto k tebe chodí a čo robí.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ PROCESS ═══════════════════════════ -->
+<section style="padding: 0 0 90px; background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="container" style="padding-top: 90px;">
+    <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 12px;">Ako to celé prebieha</h2>
+    <p style="color: var(--text-muted); max-width: 520px; margin-bottom: 48px;">Jednoduchý proces bez zbytočného "agenturného" formalit.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div style="font-family:'JetBrains Mono',monospace; font-size:1.3rem; font-weight:700; color:var(--green); margin-bottom:16px;">01</div>
+        <h3>Briefing & cieľ</h3>
+        <p>Zavoláme si alebo napíšeme. Zistím, čo od webu chceš, kto je tvoj zákazník a aký je biznis cieľ stránky.</p>
+      </div>
+      <div class="feature-card">
+        <div style="font-family:'JetBrains Mono',monospace; font-size:1.3rem; font-weight:700; color:var(--green); margin-bottom:16px;">02</div>
+        <h3>Wireframe & dizajn</h3>
+        <p>Navrhnem štruktúru stránok a vizuálny dizajn. Dostaneš náhľad na schválenie ešte pred vývojom.</p>
+      </div>
+      <div class="feature-card">
+        <div style="font-family:'JetBrains Mono',monospace; font-size:1.3rem; font-weight:700; color:var(--green); margin-bottom:16px;">03</div>
+        <h3>Vývoj & testovanie</h3>
+        <p>Nakódujem web, otestujem na rôznych zariadeniach a prehliadačoch. Rýchlosť, SEO, bezpečnosť.</p>
+      </div>
+      <div class="feature-card">
+        <div style="font-family:'JetBrains Mono',monospace; font-size:1.3rem; font-weight:700; color:var(--green); margin-bottom:16px;">04</div>
+        <h3>Nasadenie & odovzdanie</h3>
+        <p>Nasadím web na hosting, nastavím domény, SSL a analytics. Zaškolím ťa na CMS, ak ho potrebuješ.</p>
+      </div>
+      <div class="feature-card">
+        <div style="font-family:'JetBrains Mono',monospace; font-size:1.3rem; font-weight:700; color:var(--green); margin-bottom:16px;">05</div>
+        <h3>Podpora po spustení</h3>
+        <p>Prvý mesiac som k dispozícii na otázky a malé úpravy. Potom sa môžeme dohodnúť na retaineri.</p>
+      </div>
+      <div class="feature-card" style="background: linear-gradient(135deg, rgba(16,185,129,.06), rgba(6,182,212,.03)); border-color: rgba(16,185,129,.25);">
+        <div style="font-size:2rem; margin-bottom:16px;">💬</div>
+        <h3>Budeš vedieť, kde to stojí</h3>
+        <p>Žiadne prekvapenia. Vždy vieš, v akom štádiu je projekt a čo bude ďalej.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FAQ ═══════════════════════════ -->
+<section style="padding: 90px 0;">
+  <div class="container">
+    <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 48px;">Časté otázky</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          Ako dlho trvá tvorba webu?
+          <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">Jednoduchý prezentačný web trvá 2–4 týždne od schválenia dizajnu – štandardne do 30 dní. Komplexnejší projekt (e-shop, viacstránkový web) 4–6 týždňov. Záleží od rozsahu a rýchlosti, akú ty dodáš podklady (texty, fotky).</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          Vieš spraviť e-shop?
+          <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">Áno, robím e-shopy primárne na WooCommerce (WordPress) aj vlastných riešeniach. Zahrniem nastavenie platobných brán (GP Webpay, Stripe, GoPay), správu produktov a kategórií, dopravné možnosti a základnú SEO optimalizáciu produktových stránok.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          Čo všetko je zahrnuté v cene webu?
+          <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">V cene je dizajn, vývoj, základné SEO nastavenie (meta tagy, schema, sitemap), responzívna verzia pre mobily, nasadenie na hosting a zaškolenie na CMS. Doménu a hosting hradíš ty – odporúčam konkrétne možnosti podľa projektu.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          Postaráš sa aj o údržbu webu?
+          <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">Áno, viem ponúknuť mesačný retainer na údržbu, aktualizácie pluginov a malé obsahové zmeny. Cena závisí od rozsahu – napíš mi a dohodneme sa.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          Pracuješ na WordPress alebo vlastnom kóde?
+          <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">Záleží od projektu. Pre väčšinu biznis webov a e-shopov používam WordPress s vlastným témou (nie page builder šablóny). Pre výkonnostné projekty robím na Astro, Next.js alebo čistom HTML/CSS/JS. Vždy volíme technológiu podľa potrieb.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PRICING PREVIEW -->
+<section id="ceny" style="padding: 0 0 90px; background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="container" style="padding-top: 90px;">
+    <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 12px;">Orientačné ceny webov</h2>
+    <p style="color: var(--text-muted); max-width: 520px; margin-bottom: 0;">Každý projekt je iný – tu sú štartovacie ceny. Presný cenník po krátkej konzultácii.</p>
+    <div class="pricing-preview" style="margin-top:32px">
+
+      <div class="pp-card">
+        <div class="pp-name">LANDING PAGE</div>
+        <div class="pp-price-row">
+          <div class="pp-price">od 790 €</div>
+          <div class="pp-period">jednorazovo</div>
+        </div>
+        <ul class="pp-list">
+          <li>Jednostránkový dizajn na mieru</li>
+          <li>WordPress + CMS</li>
+          <li>PageSpeed 90+</li>
+          <li>Základné SEO nastavenie</li>
+          <li>Spustenie do 2 týždňov</li>
+        </ul>
+        <a href="/#kontakt" class="btn-primary">Mám záujem →</a>
+      </div>
+
+      <div class="pp-card pp-featured">
+        <div class="pp-featured-label">Najobľúbenejší</div>
+        <div class="pp-name">PREZENTAČNÝ WEB</div>
+        <div class="pp-price-row">
+          <div class="pp-price">od 1 590 €</div>
+          <div class="pp-period">jednorazovo</div>
+        </div>
+        <ul class="pp-list">
+          <li>1–5 podstránok na mieru</li>
+          <li>Vlastná téma WordPress</li>
+          <li>Responzívny dizajn</li>
+          <li>SEO základ + schema</li>
+          <li>3 mesiace technická podpora</li>
+        </ul>
+        <a href="/#kontakt" class="btn-primary">Chcem web →</a>
+      </div>
+
+      <div class="pp-card">
+        <div class="pp-name">WORDPRESS PRO</div>
+        <div class="pp-price-row">
+          <div class="pp-price">od 2 290 €</div>
+          <div class="pp-period">jednorazovo</div>
+        </div>
+        <ul class="pp-list">
+          <li>Rozsiahlejší web / e-shop</li>
+          <li>WooCommerce / pokročilé funkcie</li>
+          <li>Prémiový dizajn a animácie</li>
+          <li>Integrácie (CRM, booking, platby)</li>
+          <li>6 mesiacov technická podpora</li>
+        </ul>
+        <a href="/#kontakt" class="btn-primary">Mám záujem →</a>
+      </div>
+
+    </div>
+    <p style="color:var(--text-dim); font-size:.82rem; margin-top:16px;">* Ceny bez DPH. Jednorazová platba, spustenie do 30 dní.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ CTA BAND ═══════════════════════════ -->
+<section class="page-cta">
+  <div class="container" style="text-align:center">
+    <h2>Potrebuješ nový web?</h2>
+    <p>Napíš mi a do 24 hodín ti odpoviem s prvými otázkami. Konzultácia je zadarmo.</p>
+    <div class="cta-group">
+      <a href="/#kontakt" class="btn-primary">Napíš mi →</a>
+      <a href="#ceny" class="btn-outline">Pozrieť ceny</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">socka.</div>
+        <p>Freelance digitálny marketing pre malé a stredné firmy. Košice, Slovensko.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Služby</h4>
+        <ul>
+          <li><a href="/tvorba-webov/">Web dizajn &amp; vývoj</a></li>
+          <li><a href="/ppc-sprava/">PPC kampane</a></li>
+          <li><a href="/social-sprava/">Sociálne siete</a></li>
+          <li><a href="/seo-optimalizacia/">SEO optimalizácia</a></li>
+          <li><a href="/ai-search-optimalizacia/">AI Search</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>O mne</h4>
+        <ul>
+          <li><a href="/#preco">O mne</a></li>
+          <li><a href="/#ceny">Cenník</a></li>
+          <li><a href="/#faq">FAQ</a></li>
+          <li><a href="/#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="mailto:ahoj@socka.sk">ahoj@socka.sk</a></li>
+          <li><a href="tel:+421917744642">+421 917 744 642</a></li>
+          <li><a href="/#kontakt">Košice, SK</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 socka. Všetky práva vyhradené.</p>
+      <div class="footer-socials">
+        <a href="https://instagram.com/socka.sk" target="_blank" rel="noopener" class="footer-social">IG</a>
+        <a href="https://facebook.com/socka.sk" target="_blank" rel="noopener" class="footer-social">FB</a>
+        <a href="https://linkedin.com/in/adamstefanek" target="_blank" rel="noopener" class="footer-social">LI</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- GEO entity block for AI crawlers -->
+<div class="sr-only" aria-hidden="true" itemscope itemtype="https://schema.org/Service">
+  <span itemprop="name">Tvorba webov Košice</span>
+  <span itemprop="description">Tvorba webových stránok a e-shopov v Košiciach na Slovensku. Moderné, rýchle a SEO-optimalizované weby pre malé a stredné firmy.</span>
+  <span itemprop="areaServed">Slovensko</span>
+  <span itemprop="provider" itemscope itemtype="https://schema.org/Person">
+    <span itemprop="name">Adam Štefanek</span>
+    <span itemprop="jobTitle">Freelance web developer a digitálny marketér</span>
+    <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <span itemprop="addressLocality">Košice</span>
+      <span itemprop="addressCountry">SK</span>
+    </span>
+  </span>
+</div>
+
+<script>
+/* ── THEME ── */
+function toggleTheme() {
+  const html = document.documentElement;
+  const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  try { localStorage.setItem('theme', next); } catch(e) {}
+  updateThemeBtn();
+}
+function updateThemeBtn() {
+  const dark = document.documentElement.getAttribute('data-theme') === 'dark';
+  document.getElementById('themeBtn').innerHTML = dark
+    ? '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>'
+    : '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+}
+updateThemeBtn();
+
+/* ── MOBILE MENU ── */
+function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+function closeMobile() { document.getElementById('mobileMenu').classList.remove('open'); }
+function toggleMobileServices() {
+  const sub = document.getElementById('mobileSub');
+  const btn = document.getElementById('mobileServicesBtn');
+  const open = sub.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open);
+}
+document.addEventListener('click', e => {
+  const m = document.getElementById('mobileMenu');
+  if (!m.contains(e.target) && !e.target.closest('.hamburger')) m.classList.remove('open');
+});
+
+/* ── FAQ ── */
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const open = item.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open);
+}
+
+/* ── SCROLL: header ── */
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY > 20;
+  document.getElementById('header').classList.toggle('scrolled', scrolled);
+  document.getElementById('mobileMenu').classList.toggle('scrolled-up', scrolled);
+}, { passive: true });
+
+/* ── ANIMATIONS ── */
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.feature-card, .faq-item').forEach(el => { el.classList.add('fade-up'); io.observe(el); });
+</script>
+
+<script src="/assets/shared.js"></script>
+</body>
+</html>
