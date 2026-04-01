@@ -545,6 +545,7 @@ h2.section-title { font-size: clamp(2rem, 4.5vw, 3.2rem); max-width: 600px; marg
 .review-avatar { width:46px; height:46px; border-radius:50%; background:linear-gradient(135deg,var(--green),var(--cyan)); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:.9rem; color:#000; -webkit-text-fill-color:#000; flex-shrink:0; letter-spacing:.02em; }
 .review-avatar.av-2 { background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: #fff; -webkit-text-fill-color:#fff; }
 .review-avatar.av-3 { background: linear-gradient(135deg, #f59e0b, #ef4444); color: #fff; -webkit-text-fill-color:#fff; }
+.review-avatar.google-logo { background: #fff; border: 1px solid rgba(0,0,0,0.1); padding: 7px; font-size: 0; }
 .review-name { font-size:.875rem; font-weight:700; }
 .review-company { font-size:.78rem; color:var(--text-dim); }
 
