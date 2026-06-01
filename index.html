@@ -6,8 +6,16 @@
   <title>Socka | Digitálny marketing Košice — Weby, PPC, Sociálne siete</title>
   <meta name="description" content="Freelance digitálny marketér z Košíc. Weby, PPC kampane, správa sociálnych sietí, SEO a AI Search optimalizácia pre firmy na Slovensku. Napíš mi – odpoviem do pár hodín." />
   <meta name="author" content="Udemky — socka.sk" />
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="bingbot" content="index, follow" />
   <meta name="theme-color" content="#10b981" />
+
+  <!-- Geo SEO – Košice / východné Slovensko -->
+  <meta name="geo.region" content="SK-KI" />
+  <meta name="geo.placename" content="Košice, Prešov, Michalovce, Bratislava" />
+  <meta name="geo.position" content="48.7164;21.2611" />
+  <meta name="ICBM" content="48.7164, 21.2611" />
   <link rel="canonical" href="https://socka.sk/" />
   <link rel="alternate" hreflang="sk" href="https://socka.sk/" />
   <link rel="alternate" hreflang="en" href="https://socka.sk/?lang=en" />
@@ -83,16 +91,24 @@
         "telephone": "+421908289774",
         "email": "ahoj@socka.sk",
         "address": {"@type": "PostalAddress", "addressLocality": "Košice", "addressCountry": "SK"},
-        "areaServed": {"@type": "Country", "name": "Slovakia"},
+        "geo": {"@type": "GeoCoordinates", "latitude": 48.7164, "longitude": 21.2611},
+        "areaServed": [
+          {"@type": "City", "name": "Košice"},
+          {"@type": "City", "name": "Prešov"},
+          {"@type": "City", "name": "Michalovce"},
+          {"@type": "City", "name": "Bratislava"},
+          {"@type": "Country", "name": "Slovakia"}
+        ],
         "priceRange": "€€",
+        "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "5", "bestRating": "5", "worstRating": "1"},
         "knowsAbout": ["digitálny marketing","PPC reklama","Google Ads","Meta Ads","tvorba webov","WordPress","SEO optimalizácia","správa sociálnych sietí","AEO optimalizácia","GEO optimalizácia"],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Digitálne marketingové služby",
           "itemListElement": [
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tvorba webov", "description": "Weby na mieru pre lokálne firmy. WordPress, UX, rýchlosť, Core Web Vitals."}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "PPC správa", "description": "Google Ads a Meta Ads kampane. Hypotézy, A/B testy, týždenný reporting."}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Správa sociálnych sietí", "description": "Stratégia, tvorba obsahu, publikovanie a komunitný manažment."}},
+            {"@type": "Offer", "priceSpecification": {"@type": "PriceSpecification", "price": "790", "priceCurrency": "EUR", "valueAddedTaxIncluded": false}, "itemOffered": {"@type": "Service", "name": "Tvorba webov", "description": "Weby na mieru pre lokálne firmy. WordPress, UX, rýchlosť, Core Web Vitals."}},
+            {"@type": "Offer", "priceSpecification": {"@type": "PriceSpecification", "price": "150", "priceCurrency": "EUR", "valueAddedTaxIncluded": false}, "itemOffered": {"@type": "Service", "name": "PPC správa", "description": "Google Ads a Meta Ads kampane. Hypotézy, A/B testy, týždenný reporting."}},
+            {"@type": "Offer", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "390", "priceCurrency": "EUR", "unitCode": "MON", "valueAddedTaxIncluded": false}, "itemOffered": {"@type": "Service", "name": "Správa sociálnych sietí", "description": "Stratégia, tvorba obsahu, publikovanie a komunitný manažment."}},
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO optimalizácia", "description": "Technické SEO, keyword research, linkbuilding a obsahová stratégia."}},
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Search optimalizácia", "description": "AEO a GEO optimalizácia pre ChatGPT, Perplexity, Gemini a ďalšie AI vyhľadávače."}}
           ]
