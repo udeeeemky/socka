@@ -56,7 +56,7 @@ button {
   --bg: #060606; --bg-card: #0f0f0f; --bg-card-hover: #141414;
   --bg-nav: rgba(6,6,6,0.84); --bg-footer: #030303;
   --border: rgba(255,255,255,0.07); --border-hover: rgba(255,255,255,0.15);
-  --text: #f0f0f0; --text-muted: #888; --text-dim: #444;
+  --text: #f0f0f0; --text-muted: #888; --text-dim: #787878;
   --card-shadow: none; --grid-line: rgba(255,255,255,0.022);
   --sb: #222; --sb-bg: #060606;
   --grid-line-col: rgba(255,255,255,0.18);
@@ -71,7 +71,7 @@ button {
   --bg: #f4f4f6; --bg-card: #ffffff; --bg-card-hover: #fafafa;
   --bg-nav: rgba(244,244,246,0.88); --bg-footer: #e8e8ea;
   --border: rgba(0,0,0,0.09); --border-hover: rgba(0,0,0,0.18);
-  --text: #111111; --text-muted: #555; --text-dim: #aaa;
+  --text: #111111; --text-muted: #555; --text-dim: #6b6b6b;
   --card-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.05);
   --grid-line: rgba(0,0,0,0.038); --sb: #ccc; --sb-bg: #efefef;
   --grid-line-col: rgba(0,0,0,0.14);
