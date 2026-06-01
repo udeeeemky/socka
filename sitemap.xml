@@ -5,44 +5,50 @@
     <loc>https://socka.sk/</loc>
     <xhtml:link rel="alternate" hreflang="sk" href="https://socka.sk/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://socka.sk/?lang=en"/>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://socka.sk/tvorba-webov/</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://socka.sk/ppc-sprava/</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://socka.sk/social-sprava/</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://socka.sk/seo-optimalizacia/</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://socka.sk/graficke-prace/</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://socka.sk/ai-search-optimalizacia/</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://socka.sk/ochrana-osobnych-udajov/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

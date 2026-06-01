@@ -20,6 +20,21 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="SEO optimalizácia | socka.sk" />
   <meta name="twitter:description" content="Technické SEO, linkbuilding a obsahová stratégia pre slovenské firmy." />
+    <!-- Google Analytics 4 – načíta sa len po súhlase -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    // Predvolene zakázané (GDPR Consent Mode v2)
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      wait_for_update: 500
+    });
+    gtag('js', new Date());
+    gtag('config', 'G-VCLGEG90EV');
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCLGEG90EV"></script>
+
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -27,7 +42,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" as="style" onload="this.onload=null;this.rel="stylesheet"" />
   <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" /></noscript>
-  <link rel="stylesheet" href="/assets/shared.css" />
+  <link rel="stylesheet" href="/assets/shared.css?v=3" />
   <script>(function(){try{var t=localStorage.getItem('theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');else document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Service","name":"SEO optimalizácia","description":"Technický SEO audit, keyword research, on-page SEO, linkbuilding a obsahová stratégia pre slovenské firmy.","provider":{"@type":"Person","name":"Adam Štefanek","url":"https://socka.sk","address":{"@type":"PostalAddress","addressLocality":"Košice","addressCountry":"SK"}},"areaServed":"SK","url":"https://socka.sk/seo-optimalizacia/"}
@@ -37,6 +52,27 @@
   </script>
   <link rel="alternate" hreflang="sk" href="https://socka.sk/seo-optimalizacia/">
   <link rel="alternate" hreflang="x-default" href="https://socka.sk/seo-optimalizacia/">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Domov",
+      "item": "https://socka.sk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "SEO optimalizácia",
+      "item": "https://socka.sk/seo-optimalizacia/"
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
@@ -271,7 +307,7 @@
 <!-- CTA BAND -->
 <section class="page-cta">
   <div class="container" style="text-align:center">
-    <h2>Chceš vedieť, kde ťa Google drží pri dne?</h2>
+    <h2>Chceš vedieť, kde ťa Google drží?</h2>
     <p>Urobím bezplatný 15-min quick audit – pozriem sa na tvoj web a poviem ti, kde sú najväčšie príležitosti. Bez záväzku, do 48 hodín.</p>
     <div class="cta-group">
       <a href="/#kontakt" class="btn-primary">Chcem bezplatný quick audit →</a>
